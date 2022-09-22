@@ -1,0 +1,40 @@
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 2.85;
+}
+
+.navbar li {
+    display: inline-block;
+    text-decoration: underline;
+    padding-left: 25px;
+}
+
+.header-title {
+    background-color: red;
+    text-align: center;
+    margin: 0;
+}
+
+.navbar {
+    background-color: orange;
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    background-color: green;
+    border: 1px solid green;
+}
+
+article {
+    background-color: blue;
+    margin: 16px;
+    padding-left: 20px;
+}
+
+footer div {
+    background-color: purple;
+    text-align: center;
+}
