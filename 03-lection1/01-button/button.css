@@ -1,24 +1,15 @@
 /* Стилизация кнопки */
-button {
-    padding: 0;
-    border: 0;
-    background-color: var(--white);
-}
-
-.container {
+.button_row {
     display: flex;
     flex-direction: row;
 }
 
 .button {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-
-    width: 182px;
     height: 48px;
-    margin: 5px;
-
+    padding: 15px 56px;
     border-radius: 8px;
 
     font: 16px/18.75 Roboto, sans-serif;
@@ -28,22 +19,25 @@ button {
 }
 
 .button_primary {
+    margin: 5px;
     background-color: var(--primary);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button_secondary {
+    margin: 5px;
     background-color: var(--secondary);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button_alternate {
+    margin: 5px;
     border: 1px solid var(--grey-3);
     color: var(--grey-4);
 }
 
 /* button's hover and disabled states */
-.button__disabled {
+.button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
