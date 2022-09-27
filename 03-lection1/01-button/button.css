@@ -1,9 +1,4 @@
 /* Стилизация кнопки */
-.button_row {
-    display: flex;
-    flex-direction: row;
-}
-
 .button {
     display: inline-flex;
     justify-content: center;
