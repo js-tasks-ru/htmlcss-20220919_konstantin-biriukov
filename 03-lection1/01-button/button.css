@@ -13,10 +13,6 @@
     color: var(--white);
 }
 
-.card__button {
-    margin: 5px;
-}
-
 .button_primary {
     background-color: var(--primary);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
