@@ -13,20 +13,21 @@
     color: var(--white);
 }
 
-.button_primary {
+.card__button {
     margin: 5px;
+}
+
+.button_primary {
     background-color: var(--primary);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button_secondary {
-    margin: 5px;
     background-color: var(--secondary);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button_alternate {
-    margin: 5px;
     border: 1px solid var(--grey-3);
     color: var(--grey-4);
 }
