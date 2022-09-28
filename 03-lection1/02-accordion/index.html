@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <!-- Страница с аккордеоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./accordion.css">
+    <title>Accordion</title>
+</head>
+<body>
+
+<details class="accordion__item" open>
+    <summary class="accordion__summary">
+        What is Lorem Ipsum?
+        <div class="accordion__icon"></div>
+    </summary>
+    <p class="accordion__panel">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book.
+    </p>
+</details>
+<details class="accordion__item">
+    <summary class="accordion__summary">
+        Where does it come from?
+        <span class="accordion__icon"></span>
+    </summary>
+    <p class="accordion__panel">
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+        College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+        going through the cites of the word in classical literature, discovered the undoubtable source.
+    </p>
+</details>
+
+</body>
 </html>
