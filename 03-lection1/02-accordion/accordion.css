@@ -1,10 +1,13 @@
 /* Стилизация аккордеона */
+.accordion {
+    width: 730px;
+}
 
 .accordion__item {
-    width: 730px;
     margin-bottom: 8px;
-    background: #FFFFFF;
-    border: 1px solid #ACB5BD;
+    padding: 24px 32px;
+    background: var(--white);
+    border: 1px solid var(--grey-3);
     border-radius: 8px;
 }
 
@@ -21,14 +24,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 32px;
     list-style: none;
     cursor: pointer;
+    color: var(--black);
+    font: normal 400 16px/24px Inter, sans-serif;
 }
 
 .accordion__panel {
     margin: 0;
-    padding: 0 32px 32px;
+    color: var(--grey-4);
+    font: normal 400 16px/24px Inter, sans-serif;
 }
 
 .accordion__icon {
@@ -39,4 +44,8 @@
 
 .accordion__item[open] .accordion__icon {
     transform: rotate(180deg);
+}
+
+.accordion__item[open] .accordion__summary {
+    padding-bottom: 24px;
 }
