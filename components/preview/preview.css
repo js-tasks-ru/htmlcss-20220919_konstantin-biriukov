@@ -15,7 +15,7 @@
 .preview__card {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     margin: 30px auto;
     width: 350px;
     height: 367px;
@@ -30,5 +30,6 @@
 }
 
 .preview__text {
+    align-self: flex-end;
     margin-bottom: 30px;
 }
