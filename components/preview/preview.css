@@ -1,9 +1,8 @@
 .preview {
-    /*height: 400px;*/
     background: #F9FAFC;
 }
 
-.preview__container {
+.preview .container {
     padding: 68px 165px 204px 165px;
 }
 
@@ -12,7 +11,7 @@
     flex-wrap: wrap;
 }
 
-.preview__card {
+.card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +28,7 @@
     color: var(--black);
 }
 
-.preview__text {
+.card__text {
     align-self: flex-end;
     margin-bottom: 30px;
 }
