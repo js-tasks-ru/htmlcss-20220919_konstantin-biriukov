@@ -1,8 +1,4 @@
 /* Стилизация аккордеона */
-.accordion {
-    width: 730px;
-}
-
 .accordion__item {
     margin-bottom: 8px;
     padding: 24px 32px;
@@ -42,10 +38,14 @@
     background: url("./public/arrow.svg") no-repeat center;
 }
 
-.accordion__item[open] .accordion__icon {
-    transform: rotate(180deg);
+.accordion__item[open] .accordion__item {
+    padding-bottom: 32px;
 }
 
 .accordion__item[open] .accordion__summary {
     padding-bottom: 24px;
+}
+
+.accordion__item[open] .accordion__icon {
+    transform: rotate(180deg);
 }
