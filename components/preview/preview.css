@@ -2,33 +2,7 @@
     background: #F9FAFC;
 }
 
-.preview .container {
-    padding: 68px 165px 204px 165px;
-}
-
 .preview__cards {
     display: flex;
     flex-wrap: wrap;
-}
-
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px auto;
-    width: 350px;
-    height: 367px;
-
-    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 12px;
-    background: var(--white);
-
-    text-align: center;
-    font: normal 500 21px/25px Roboto, sans-serif;
-    color: var(--black);
-}
-
-.card__text {
-    align-self: flex-end;
-    margin-bottom: 30px;
 }
