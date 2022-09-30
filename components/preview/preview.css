@@ -1,4 +1,8 @@
 .preview {
-    height: 400px;
     background: #F9FAFC;
+}
+
+.preview__cards {
+    display: flex;
+    flex-wrap: wrap;
 }
