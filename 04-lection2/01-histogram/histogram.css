@@ -1,8 +1,3 @@
-.container {
-    width: 354px;
-    margin: 20px auto;
-}
-
 .histogram__card {
     padding: 16px 24px 24px;
     background: var(--white);
@@ -41,7 +36,7 @@
 }
 
 .histogram__bar {
-    width: 100%;
+    flex-basis: 100%;
     background: var(--blue);
-    margin: 0 1px;
+    margin-right: 1px;
 }

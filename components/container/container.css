@@ -2,3 +2,8 @@
     max-width: 1110px;
     margin: 0 auto;
 }
+
+.histogram__container {
+    width: 354px;
+    margin: 20px auto;
+}
