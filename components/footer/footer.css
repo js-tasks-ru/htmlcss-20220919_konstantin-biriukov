@@ -11,7 +11,7 @@
     font-weight: 500;
     font-size: 38px;
     line-height: 48px;
-    color: #212429;
+    color: var(--black);
 }
 
 .footer__text {
@@ -25,5 +25,21 @@
     font-size: 16px;
     line-height: 150%;
     text-align: center;
-    color: #212429;
+    color: var(--black);
+}
+
+.inner__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 166px;
+    background: blue;
+    background: var(--grey-0);
+}
+
+.inner__footer-text {
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    font: normal 500 12px/18px Inter, sans-serif;
 }

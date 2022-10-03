@@ -1,0 +1,15 @@
+.inner__main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr;
+    background: var(--grey-0);
+    padding: 36px 165px 0 165px;
+}
+
+.inner__components {
+    min-width: 825px;
+    margin-left: 56px;
+    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+    background: var(--white);
+}
