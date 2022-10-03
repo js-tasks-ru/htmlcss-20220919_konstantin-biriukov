@@ -1,4 +1,4 @@
-.inner__main {
+.main__inner {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto 1fr;
@@ -6,7 +6,7 @@
     padding: 36px 165px 0 165px;
 }
 
-.inner__components {
+.components__inner {
     min-width: 825px;
     margin-left: 56px;
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);

@@ -28,7 +28,7 @@
     color: var(--black);
 }
 
-.inner__footer {
+.footer__inner {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@
     background: var(--grey-0);
 }
 
-.inner__footer-text {
+.footer__inner-text {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--grey-3);
