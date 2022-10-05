@@ -6,7 +6,7 @@
     padding: 36px 165px 0 165px;
 }
 
-.components__inner {
+.main__components {
     min-width: 825px;
     margin-left: 56px;
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
