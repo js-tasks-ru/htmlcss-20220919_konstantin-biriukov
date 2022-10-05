@@ -41,20 +41,20 @@
     font: normal 400 16px/20px Source Sans Pro, sans-serif;
 }
 
-.calendar__item.calendar__item_day {
+.calendar__item_day {
     color: var(--blue-calendar-2);
     font: normal 400 14px/20px Inter, sans-serif;
 }
 
-.item1 {
+.calendar__item_start {
     grid-column-start: 5;
 }
 
-.range {
+.calendar__item_range {
     background: var(--blue-calendar-3-opacity2);
 }
 
-.range_border {
+.calendar__item_side {
     background: var(--blue);
     color: var(--white);
 }
