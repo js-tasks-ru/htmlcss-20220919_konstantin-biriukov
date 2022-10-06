@@ -1,0 +1,28 @@
+.menu__inner {
+    width: 229px;
+}
+
+.menu__title {
+    margin: 0 0 16px;
+    font: normal 400 20px/26px Inter, sans-serif;
+    color: var(--black-dark);
+}
+
+.menu__items {
+    display: grid;
+    gap: 4px;
+    font: normal 400 14px/22px Inter, sans-serif;
+    color: var(--black);
+}
+
+.menu__back {
+    margin-top: 30px;
+    font: normal 400 14px/22px Inter, sans-serif;
+    color: var(--black);
+}
+
+.menu__item:hover,
+.menu__back:hover {
+    cursor: pointer;
+    color: var(--orange);
+}

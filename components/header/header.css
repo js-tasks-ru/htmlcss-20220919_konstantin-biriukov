@@ -7,3 +7,7 @@
     font: normal 500 50px/64px "Inter", sans-serif;
     color: var(--black);
 }
+
+.header__inner {
+    height: 82px;
+}
