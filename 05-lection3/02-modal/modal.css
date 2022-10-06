@@ -1,0 +1,33 @@
+.modal__container {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(196, 196, 196, 0.5);
+}
+
+.modal__window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px 33px 40px;
+
+    border-radius: 8px;
+    font: 400 normal 16px/24px Inter, sans-serif;
+    background: var(--white);
+    color: var(--grey-4);
+}
+
+.modal__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: var(--grey-4);
+    cursor: pointer;
+}
+
+.modal__title {
+    padding-bottom: 14px;
+    color: var(--blue-2);
+    font: 600 normal 20px/24px Inter, sans-serif;
+}
