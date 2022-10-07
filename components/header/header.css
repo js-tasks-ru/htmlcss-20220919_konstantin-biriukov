@@ -1,13 +1,33 @@
 .header {
-    padding: 96px 0 77px 160px;
+    padding: 24px 0 77px 160px;
 }
 
 .header__title {
-    margin: 0;
+    margin: 40px 0 0;
     font: normal 500 50px/64px "Inter", sans-serif;
     color: var(--black);
 }
 
+.header__icons {
+    display: flex;
+    gap: 8px;
+}
+
 .header__inner {
     height: 82px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 17px 0 69px 16px;
+    }
+
+    .header__title {
+        font: 400 normal 28px/38px Inter, sans-serif;
+        color: var(--grey-4);
+    }
+
+    .header__icons {
+        justify-content: center;
+    }
 }
