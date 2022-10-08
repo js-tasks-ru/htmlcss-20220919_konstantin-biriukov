@@ -1,0 +1,48 @@
+.components {
+    min-width: 825px;
+    margin-left: 56px;
+    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+    background: var(--white);
+}
+
+.components__top {
+    padding: 38px 0 0 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.components__title {
+    color: var(--grey-4);
+    font: normal 400 28px/38px Inter, sans-serif;
+}
+
+.components__component {
+    margin: 58px 0 64px 0;
+}
+
+.components__bottom {
+    padding: 50px 0 64px 42px;
+}
+
+.components__html {
+    width: 80%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .components {
+        margin: 0;
+        min-width: 0;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .components__top, .components__bottom {
+        padding: 16px 16px 0 16px;
+    }
+
+    .components__component {
+        align-self: center;
+    }
+}

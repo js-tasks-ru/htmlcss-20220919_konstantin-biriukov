@@ -1,0 +1,30 @@
+.nav {
+    display: flex;
+    gap: 40px;
+    color: var(--grey-3);
+    font: 400 normal 16px/24px Inter, sans-serif;
+}
+
+.nav__item:hover {
+    cursor: pointer;
+    color: var(--black);
+}
+
+.nav__item:first-child {
+    color: var(--black);
+}
+
+.nav__item:first-child:after {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 5px;
+    background: var(--black);
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        gap: 24px;
+    }
+}

@@ -1,6 +1,8 @@
 @import '../fonts/fonts.css';
 @import "../../components/page/page.css";
 @import "../../components/inner-page/inner-page.css";
+@import "../../components/components/components.css";
+@import "../../components/nav/nav.css";
 @import "../../components/header/header.css";
 @import "../../components/container/container.css";
 @import "../../components/preview/preview.css";
