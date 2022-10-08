@@ -37,11 +37,11 @@
     color: var(--grey-3);
 }
 
-.header__menu_item {
+.header__menu-item {
     cursor: pointer;
 }
 
-.header__menu_item:hover {
+.header__menu-item:hover {
     color: var(--black);
 }
 
