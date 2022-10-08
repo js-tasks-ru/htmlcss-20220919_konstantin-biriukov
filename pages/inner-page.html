@@ -2,14 +2,44 @@
 <!-- Внутренняя страница -->
 <html lang="ru">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../03-lection1/01-button/button.css">
     <title>Inner Page</title>
 </head>
 <body>
 
 <div class="inner__page">
-    <header class="header__inner"></header>
+    <header class="header__inner">
+        <div class="header__burger">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="header__icons">
+            <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_16746_155)">
+                    <rect y="1" width="30" height="30" fill="#212429"/>
+                    <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                    <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_16746_155">
+                        <rect width="110" height="32" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+        <div class="header__menu">
+            <a class="header__menu_item">Components</a>
+            <a class="header__menu_item">About</a>
+            <a class="header__menu_item">Contact</a>
+        </div>
+    </header>
 
     <main class="main__inner">
 
@@ -26,7 +56,22 @@
             <p class="menu__back">Main Page</p>
         </div>
 
-        <div class="main__components"></div>
+        <div class="main__components_container">
+            <div class="main__components_top">
+                <h3 class="main__components_title">Button</h3>
+                <div class="main__components_component">
+                    <button class="button button_primary">Primary</button>
+                </div>
+                <nav class="main__components_nav">
+                    <a class="main__components_nav-item">HTML</a>
+                    <a class="main__components_nav-item">CSS</a>
+                </nav>
+            </div>
+            <hr>
+            <div class="main__components_bottom">
+                <img src="/assets/images/button.png" class="main__components_html" alt="button"/>
+            </div>
+        </div>
     </main>
 
     <footer class="footer__inner">
