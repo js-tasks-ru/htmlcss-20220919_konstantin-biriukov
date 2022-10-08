@@ -6,11 +6,7 @@
     /* h2 */
     padding: 72px 0 32px;
     text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 38px;
-    line-height: 48px;
+    font: normal 500 38px/48px Inter, sans-serif;
     color: var(--black);
 }
 
@@ -19,11 +15,7 @@
     max-width: 640px;
     margin: 0 auto;
     padding: 0 0 136px 0;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
+    font: normal 400 16px/150% Inter, sans-serif;
     text-align: center;
     color: var(--black);
 }
@@ -45,7 +37,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .footer {
+    .footer, .footer__inner {
         display: none;
     }
 }
