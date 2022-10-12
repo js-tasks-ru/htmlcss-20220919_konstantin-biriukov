@@ -43,13 +43,13 @@
     height: 70%;
 }
 
-.modal__window_preview {
+.modal_preview .modal__window {
     padding: 15px;
     width: 70%;
     height: 70%;
 }
 
-.modal__text_preview {
+.modal_preview .modal__text {
     font-size: 10px;
     line-height: 1rem;
 }

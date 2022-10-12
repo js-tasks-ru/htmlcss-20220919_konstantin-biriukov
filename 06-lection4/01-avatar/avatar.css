@@ -10,7 +10,7 @@
     object-fit: cover;
 }
 
-.avatar__preview {
+.avatar_preview {
     margin: auto;
     width: 40%;
     height: 40%;
