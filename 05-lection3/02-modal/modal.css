@@ -23,6 +23,8 @@
     position: absolute;
     top: 12px;
     right: 12px;
+    width: 20px;
+    height: 20px;
     color: var(--grey-4);
     cursor: pointer;
 }
@@ -31,4 +33,23 @@
     padding-bottom: 14px;
     color: var(--blue-2);
     font: 600 normal 20px/24px Inter, sans-serif;
+}
+
+.modal_preview {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 70%;
+}
+
+.modal__window_preview {
+    padding: 15px;
+    width: 70%;
+    height: 70%;
+}
+
+.modal__text_preview {
+    font-size: 10px;
+    line-height: 1rem;
 }

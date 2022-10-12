@@ -24,6 +24,7 @@
 }
 
 .histogram__total {
+    text-align: left;
     color: var(--black);
     font: normal 400 20px/26px Inter, sans-serif;
 }

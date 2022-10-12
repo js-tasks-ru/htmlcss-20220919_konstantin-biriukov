@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
 
     <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
+    <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
     <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
+
+    <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
     <title>Main Page</title>
 </head>
 <body>
@@ -36,7 +39,7 @@
         <div class="container">
             <div class="preview__cards">
 
-                <div class="card">
+                <a class="card">
                     <div class="tooltip" style="margin: auto;">
                         <div class="tooltip__trigger">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -52,17 +55,17 @@
                                       fill="#212429"/>
                             </svg>
                         </div>
-                        <div class="tooltip__helper">Helper Text</div>
+                        <div class="tooltip__helper" style="display:block;">Helper Text</div>
                     </div>
                     <div class="card__text">
                         <div>Tooltip</div>
                         <div class="card__text_small">Container</div>
                     </div>
-                </div>
+                </a>
 
-                <div class="card"><span class="card__text">Custom form elements</span></div>
+                <a class="card"><span class="card__text">Custom form elements</span></a>
 
-                <div class="card">
+                <a class="card">
                     <div class="calendar" style="width:50%; height: 50%; margin: auto;">
                         <header class="calendar__title">October 2019</header>
 
@@ -115,9 +118,31 @@
                         <div>Calendar</div>
                         <div class="card__text_small">Container</div>
                     </div>
-                </div>
+                </a>
 
-                <div class="card"><span class="card__text">Modal dialog</span></div>
+                <a class="card">
+                    <div id="modal" class="modal modal_preview">
+                        <main class="modal__window modal__window_preview">
+                            <svg id="modal-close" class="modal__close">
+                                <use href="../../assets/images/icons-sprite.svg#modal"></use>
+                            </svg>
+                            <h3 class="modal__title">Modal title</h3>
+                            <p class="modal__text modal__text_preview">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis
+                                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis
+                                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </main>
+                    </div>
+
+                    <div class="card__text">
+                        <div>Modal dialog</div>
+                        <div class="card__text_small">Element</div>
+                    </div>
+                </a>
 
                 <div class="card">
                     <div style="width:80%; height: 50%; margin: auto;">
@@ -158,7 +183,17 @@
                         <div class="card__text_small">Element</div>
                     </div>
                 </div>
-                <div class="card"><span class="card__text">Avatar</span></div>
+                <a class="card">
+                    <div class="avatar avatar__preview">
+                        <img src="./06-lection4/01-avatar/public/avatar-200.jpg" alt="user's avatar"
+                             class="avatar__img">
+                    </div>
+
+                    <div class="card__text">
+                        <div>Avatar</div>
+                        <div class="card__text_small">Element</div>
+                    </div>
+                </a>
             </div>
         </div>
     </main>
