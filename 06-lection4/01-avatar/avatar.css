@@ -9,3 +9,9 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+.avatar_preview {
+    margin: auto;
+    width: 40%;
+    height: 40%;
+}
