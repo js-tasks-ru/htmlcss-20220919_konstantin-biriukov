@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <!-- Страница с кнопкой переключения -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./toggler.css">
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./toggler.css">
+    <title>Toggler</title>
+</head>
+<body style="padding: 50px;">
+<form class="toggler__form">
+    <h5 class="toggler__form-title">Toggle Button</h5>
+    <div class="toggler__items">
+        <label class="toggler__item toggler__item_default">
+            <input type="checkbox" name="toggler" value="1" class="toggler__input">
+            <div class="toggler__state">
+                <div class="toggler__control">
+                    <div class="toggler__icon-inner"></div>
+                </div>
+                <p class="toggler__title">Off</p>
+            </div>
+        </label>
 
-    </body>
+        <label class="toggler__item toggler__item_checked">
+            <input type="checkbox" name="toggler" value="2" class="toggler__input" checked>
+            <div class="toggler__state">
+                <div class="toggler__control">
+                    <div class="toggler__icon-inner"></div>
+                </div>
+                <p class="toggler__title">On</p>
+            </div>
+        </label>
+
+        <label class="toggler__item toggler__item_disabled">
+            <input type="checkbox" name="toggler" value="3" class="toggler__input" disabled>
+            <div class="toggler__state">
+                <div class="toggler__control">
+                    <div class="toggler__icon-inner"></div>
+                </div>
+                <p class="toggler__title">Disabled</p>
+            </div>
+        </label>
+
+    </div>
+</form>
+</body>
+
 </html>
