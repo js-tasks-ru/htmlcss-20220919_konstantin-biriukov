@@ -69,7 +69,7 @@
     cursor: not-allowed;
 }
 
-.checkbox__input:disabled ~ .checkbox__state .checkbox__icon {
+.checkbox__input:disabled ~ .checkbox__state .checkbox__control {
     background: var(--grey-2);
 }
 
