@@ -1,5 +1,5 @@
 .preview {
-    background: #F9FAFC;
+    background: var(--white-2);
 }
 
 .preview__cards {

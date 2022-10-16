@@ -11,6 +11,8 @@
 @import "../../components/preview/card.css";
 @import "../../components/footer/footer.css";
 
+@import "../../components/tabs/tabs.css";
+
 :root {
     --white: #ffffff;
     --white-2: #F9FAFC;
