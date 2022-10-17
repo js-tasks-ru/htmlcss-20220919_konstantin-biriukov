@@ -8,11 +8,15 @@
 
 /* radio element*/
 .radio {
-    max-width: 150px;
+    display: inline-block;
+    position: relative;
 }
 
 .radio__input {
+    position: absolute;
     appearance: none;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
 }
 
 .radio__state {
