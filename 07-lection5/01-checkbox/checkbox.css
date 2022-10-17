@@ -1,4 +1,3 @@
-/* checkbox form */
 .checkbox__form-title {
     margin-bottom: 13px;
     font: normal 500 12px/18px Inter, sans-serif;
@@ -7,19 +6,16 @@
     color: var(--grey-3);
 }
 
-.checkbox__items {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-/* checkbox element*/
-.checkbox__item {
+.checkbox {
     max-width: 150px;
+    position: relative;
 }
 
 .checkbox__input {
+    position: absolute;
     appearance: none;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
 }
 
 .checkbox__state {
