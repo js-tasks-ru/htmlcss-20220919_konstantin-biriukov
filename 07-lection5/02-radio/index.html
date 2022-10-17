@@ -9,40 +9,36 @@
     <link rel="stylesheet" href="./radio.css">
     <title>Radio Buttons</title>
 </head>
-<body style="padding: 50px;">
-<form class="radio__form">
-    <h5 class="radio__form-title">Radio Button</h5>
-    <div class="radio__items">
+<body style="padding: 50px; display: flex; flex-direction: column; gap: 16px;">
+    <h5 class="title">Radio Button</h5>
 
-        <label class="radio__item radio__item_default">
-            <input type="radio" name="radio-btn" value="1" class="radio__input">
-            <div class="radio__state">
-                <div class="radio__control">
-                    <div class="radio__icon-inner"></div>
-                </div>
-                <p class="radio__title">Default</p>
+    <label class="radio radio_default">
+        <input type="radio" name="radio-btn" value="1" class="radio__input">
+        <div class="radio__state">
+            <div class="radio__control">
+                <div class="radio__icon-inner"></div>
             </div>
-        </label>
+            <p class="radio__title">Default</p>
+        </div>
+    </label>
 
-        <label class="radio__item radio__item_selected">
-            <input type="radio" name="radio-btn" value="2" class="radio__input" checked>
-            <div class="radio__state">
-                <div class="radio__control">
-                    <div class="radio__icon-inner"></div>
-                </div>
-                <p class="radio__title">Selected</p>
+    <label class="radio radio_selected">
+        <input type="radio" name="radio-btn" value="2" class="radio__input" checked>
+        <div class="radio__state">
+            <div class="radio__control">
+                <div class="radio__icon-inner"></div>
             </div>
-        </label>
+            <p class="radio__title">Selected</p>
+        </div>
+    </label>
 
-        <label class="radio__item radio__item_disabled">
-            <input type="radio" name="radio-btn" value="3" class="radio__input" disabled>
-            <div class="radio__state">
-                <div class="radio__control"></div>
-                <p class="radio__title">Disabled</p>
-            </div>
-        </label>
+    <label class="radio radio_disabled">
+        <input type="radio" name="radio-btn" value="3" class="radio__input" disabled>
+        <div class="radio__state">
+            <div class="radio__control"></div>
+            <p class="radio__title">Disabled</p>
+        </div>
+    </label>
 
-    </div>
-</form>
 </body>
 </html>

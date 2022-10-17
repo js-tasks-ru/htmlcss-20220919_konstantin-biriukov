@@ -1,5 +1,4 @@
-/* radio form */
-.radio__form-title {
+.title {
     margin-bottom: 13px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -7,14 +6,8 @@
     font: normal 500 12px/18px Inter, sans-serif;
 }
 
-.radio__items {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
 /* radio element*/
-.radio__item {
+.radio {
     max-width: 150px;
 }
 
