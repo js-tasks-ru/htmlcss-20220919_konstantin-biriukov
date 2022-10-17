@@ -6,53 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../assets/css/normalize.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./form-inputs.css">
     <link rel="stylesheet" href="./input.css">
     <title></title>
 </head>
 <body style="padding: 50px;">
-<div class="form__inputs">
+    <div class="form__inputs">
 
-    <form class="form__group form__group_default">
-        <label class="form__group_label" for="default">Label</label>
-        <div class="form__group_input-wrapper">
-            <input class="form__group_input" type="text" name="default" id="default" placeholder="Placeholder">
+        <div class="form-group form-group_default">
+            <label class="form-group__label" for="default">Label</label>
+            <div class="form-group__wrapper">
+                <input class="form-group__input" type="text" name="default" id="default" placeholder="Placeholder">
+            </div>
         </div>
-    </form>
 
-    <form class="form__group form__group_focus">
-        <label class="form__group_label" for="focus">Focus</label>
-        <div class="form__group_input-wrapper">
-            <input class="form__group_input" type="text" name="focus" id="focus" value="Filled Input" autofocus>
+        <div class="form-group form-group_focus">
+            <label class="form-group__label" for="focus">Focus</label>
+            <div class="form-group__wrapper">
+                <input class="form-group__input" type="text" name="focus" id="focus" value="Filled Input" autofocus>
+            </div>
         </div>
-    </form>
 
-    <form class="form__group form__group_success">
-        <label class="form__group_label" for="success">Success</label>
-        <div class="form__group_input-wrapper">
-            <input class="form__group_input" type="text" name="success" id="success" value="Success">
-            <svg class="form__group_icon icon_success" fill="none">
-                <use href="../../assets/images/icons-sprite.svg#input-success"></use>
-            </svg>
+        <div class="form-group form-group_success">
+            <label class="form-group__label" for="success">Success</label>
+            <div class="form-group__wrapper">
+                <input class="form-group__input" type="text" name="success" id="success" value="Success">
+                <svg class="form-group__icon form-group__icon_success" fill="none">
+                    <use href="../../assets/images/icons-sprite.svg#input-success"></use>
+                </svg>
+            </div>
         </div>
-    </form>
 
-    <form class="form__group form__group_error">
-        <label class="form__group_label" for="error">Error</label>
-        <div class="form__group_input-wrapper">
-            <input class="form__group_input" type="text" name="error" id="error" value="Error">
-            <svg class="form__group_icon icon_error" fill="none">
-                <use href="../../assets/images/icons-sprite.svg#input-error"></use>
-            </svg>
+        <div class="form-group form-group_error">
+            <label class="form-group__label" for="error">Error</label>
+            <div class="form-group__wrapper">
+                <input class="form-group__input" type="text" name="error" id="error" value="Error">
+                <svg class="form-group__icon form-group__icon_error" fill="none">
+                    <use href="../../assets/images/icons-sprite.svg#input-error"></use>
+                </svg>
+            </div>
         </div>
-    </form>
 
-    <form class="form__group form__group_disabled">
-        <label class="form__group_label" for="disabled">Disabled</label>
-        <div class="form__group_input-wrapper">
-            <input class="form__group_input" type="text" name="disabled" id="disabled" placeholder="Disabled" disabled>
+        <div class="form-group form-group_disabled">
+            <label class="form-group__label" for="disabled">Disabled</label>
+            <div class="form-group__wrapper">
+                <input class="form-group__input" type="text" name="disabled" id="disabled" placeholder="Disabled" disabled>
+            </div>
         </div>
-    </form>
-</div>
 
+    </div>
 </body>
 </html>
