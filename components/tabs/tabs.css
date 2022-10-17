@@ -1,9 +1,13 @@
 .tabs {
     margin-top: 40px;
+    position: relative;
 }
 
 .tabs__input {
+    position: absolute;
     appearance: none;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
 }
 
 .tabs__scroller {
@@ -11,7 +15,7 @@
     gap: 40px;
 }
 
-.tabs__scroller label:first-child {
+.tabs__scroller .tabs__label:first-child {
     margin-left: 160px;
 }
 
