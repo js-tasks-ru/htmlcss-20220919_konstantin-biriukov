@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./burger-menu.css">
+    <script defer src="./burger-menu.js"></script>
+    <title>Burger Menu</title>
+</head>
+<body>
+<div class="inner__page">
+    <header class="header__inner">
+        <button id="burger-menu-open">
+            <svg fill="none" class="burger__open-icon header__burger">
+                <use href="../../assets/images/icons-sprite.svg#burger-menu"></use>
+            </svg>
+        </button>
+        <svg class="header__icons" fill="none">
+            <use href="../../assets/images/icons-sprite.svg#header-icons"></use>
+        </svg>
+        <div class="burger-menu" id="burger-menu">
+            <button id="burger-menu-close">
+                <svg fill="none" class="burger__close-icon header__burger">
+                    <use href="../../assets/images/icons-sprite.svg#burger-close"></use>
+                </svg>
+            </button>
+            <main class="main__inner">
+                <div class="main__color-theme">
+                    <p class="main__mode-name">Dark mode</p>
+                </div>
+                <div class="menu__inner">
 
-    </body>
+                    <h4 class="menu__title">Components</h4>
+                    <div class="menu__items">
+                        <p class="menu__item">Modal</p>
+                        <p class="menu__item">Tooltip</p>
+                        <p class="menu__item">Avatar</p>
+                        <p class="menu__item">Calendar</p>
+                        <p class="menu__item">Histogram</p>
+                        <p class="menu__item">Custom Form Elements</p>
+                    </div>
+                    <p class="menu__back">Main Page</p>
+                </div>
+            </main>
+        </div>
+    </header>
+
+
+</div>
+</body>
 </html>

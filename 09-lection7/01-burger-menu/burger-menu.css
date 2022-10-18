@@ -1,0 +1,57 @@
+.burger__open-icon,
+.burger__close-icon {
+    display: inline-block;
+}
+
+.burger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 375px;
+    background: var(--white-2);
+    transform: translateX(-100vw);
+    transition: transform 250ms linear;
+}
+
+.burger-menu[data-open] {
+    transform: translateX(0);
+}
+
+.main__color-theme {
+    padding: 28px 0 24px 0;
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2)
+}
+
+.main__inner {
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 64px;
+    height: 100vh;
+    min-width: 375px;
+    padding: 16px;
+    background: var(--white-2);
+}
+
+.header__icons {
+    z-index: 1;
+}
+
+.menu__inner {
+    padding-top: 24px;
+}
+
+.main__mode-name {
+    font: normal 400 16px/24px Inter, sans-serif;
+    color: var(--grey-4);
+}
+
+@media screen and (max-width: 768px) {
+    .menu__inner {
+        display: block;
+    }
+}
