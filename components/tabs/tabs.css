@@ -10,13 +10,10 @@
 }
 
 .tabs__scroller {
-    overflow-x: auto;
-}
-
-.tabs__scroller-container {
     margin-left: 160px;
     display: flex;
     gap: 40px;
+    overflow-x: auto;
 }
 
 .tabs__label {
