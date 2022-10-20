@@ -24,6 +24,8 @@
     cursor: pointer;
     color: var(--black);
     font: normal 400 16px/24px Inter, sans-serif;
+
+    animation: slide-up 250ms linear forwards;
 }
 
 .accordion__panel {
@@ -43,10 +45,30 @@
 }
 
 .accordion__item[open] .accordion__summary {
-    padding-bottom: 16px;
-    transition: padding-bottom 200ms linear;
+    animation: slide-down 250ms linear forwards;
 }
 
 .accordion__item[open] .accordion__icon {
     transform: rotate(180deg);
 }
+
+@keyframes slide-down {
+    0% {
+        padding-bottom: 0;
+    }
+
+    100% {
+        padding-bottom: 16px;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        padding-bottom: 16px;
+    }
+
+    100% {
+        padding-bottom: 0;
+    }
+}
+
