@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="./input.css">
     <title></title>
 </head>
-<body style="padding: 50px;">
-    <div class="form__inputs">
 
+<body style="padding: 50px;" class="preload-transitions">
+    <div class="form__inputs">
         <div class="form-group form-group_default">
             <label class="form-group__label" for="default">Label</label>
             <div class="form-group__wrapper">
@@ -56,4 +56,10 @@
 
     </div>
 </body>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded",function(){
+        let node = document.querySelector('.preload-transitions');
+        node.classList.remove('preload-transitions');
+    });
+</script>
 </html>
