@@ -28,6 +28,7 @@
     border-radius: 14px;
     display: grid;
     align-items: center;
+    transition: background-color 250ms linear;
 }
 
 .toggler__icon-inner {
@@ -36,6 +37,8 @@
     margin: 0 2px;
     border-radius: 16px;
     background: var(--grey-2);
+    transform: translateX(0);
+    transition: transform 250ms linear;
 }
 
 .toggler__title {
@@ -51,7 +54,7 @@
 
 .toggler__input:checked ~ .toggler__state .toggler__icon-inner {
     background: var(--white);
-    justify-self: flex-end;
+    transform: translateX(95%);
 }
 
 /* disabled */
