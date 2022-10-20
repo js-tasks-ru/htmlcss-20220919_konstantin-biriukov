@@ -34,10 +34,24 @@
     align-items: flex-end;
     height: 50px;
     padding: 39px 4px 0 1px;
+    animation: rise 350ms linear;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+    transform-origin: bottom;
 }
 
 .histogram__bar {
     flex-basis: 100%;
     background: var(--blue);
     margin-right: 1px;
+}
+
+@keyframes rise {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
 }

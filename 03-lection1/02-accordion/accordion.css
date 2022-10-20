@@ -44,6 +44,7 @@
 
 .accordion__item[open] .accordion__summary {
     padding-bottom: 16px;
+    transition: padding-bottom 200ms linear;
 }
 
 .accordion__item[open] .accordion__icon {
