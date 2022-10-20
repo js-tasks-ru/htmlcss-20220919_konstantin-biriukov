@@ -24,6 +24,7 @@
     width: 28px;
     border-radius: 8px;
     background: var(--grey-2);
+    z-index: -1;
 
     animation: check 400ms linear;
     animation-fill-mode: forwards;
