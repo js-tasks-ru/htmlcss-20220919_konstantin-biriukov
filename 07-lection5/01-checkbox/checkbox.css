@@ -22,7 +22,7 @@
     width: 28px;
     height: 28px;
 
-    background: var(--white);
+    background: var(--main-bg);
     border: 1px solid var(--grey-2);
     border-radius: 4px;
     display: flex;
@@ -34,12 +34,12 @@
     display: none;
     height: 13px;
     width: 15px;
-    color: var(--white);
+    color: var(--main-bg);
 }
 
 .checkbox__title {
     font: normal 400 16px/24px Inter, sans-serif;
-    color: var(--grey-4);
+    color: var(--text-primary);
 }
 
 /* checked */

@@ -22,20 +22,20 @@
     justify-content: space-between;
     list-style: none;
     cursor: pointer;
-    color: var(--black);
+    color: var(--font-color);
     font: normal 400 16px/24px Inter, sans-serif;
 }
 
 .accordion__panel {
     margin: 0;
-    color: var(--grey-4);
+    color: var(--input-text-color);
     font: normal 400 16px/24px Inter, sans-serif;
 }
 
 .accordion__icon {
     height: 10px;
     width: 20px;
-    color: var(--white);
+    color: var(--card-bg);
 }
 
 .accordion__item[open] .accordion__item {
