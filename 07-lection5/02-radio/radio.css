@@ -33,8 +33,8 @@
 
 .radio__icon-inner {
     display: none;
-    width: 17px;
-    height: 17px;
+    width: 18.5px;
+    height: 18px;
     border-radius: 50%;
     background: var(--blue);
     border: 3px solid var(--white)
