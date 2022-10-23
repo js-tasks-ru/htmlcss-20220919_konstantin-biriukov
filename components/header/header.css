@@ -1,5 +1,6 @@
 .header {
     padding: 24px 0 77px 160px;
+    background: var(--card-bg);
 }
 
 .header__burger {
@@ -15,12 +16,13 @@
 .header__title {
     margin: 40px 0 0;
     font: normal 500 50px/64px "Inter", sans-serif;
-    color: var(--black);
+    color: var(--font-color);
 }
 
 .header__icons {
     display: flex;
     gap: 8px;
+    color: var(--text-primary);
 }
 
 .header__inner {

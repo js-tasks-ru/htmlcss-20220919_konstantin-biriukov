@@ -26,14 +26,14 @@
     width: 28px;
     height: 28px;
 
-    background: var(--white);
-    border: 1px solid var(--grey-2);
+    background: var(--main-bg);
+    border: 1px solid var(--active-text-color);
     border-radius: 50%;
 }
 
 .radio__icon-inner {
     display: none;
-    width: 18px;
+    width: 18.5px;
     height: 18px;
     border-radius: 50%;
     background: var(--blue);
@@ -41,7 +41,7 @@
 }
 
 .radio__title {
-    color: var(--grey-4);
+    color: var(--text-primary);
     font: normal 400 16px/24px Inter, sans-serif;
 }
 
@@ -71,5 +71,5 @@
 
 /* focus */
 .radio__input:focus ~ .radio__state .radio__title {
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--font-color);
 }
