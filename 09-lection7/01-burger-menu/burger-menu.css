@@ -1,16 +1,3 @@
-/* burger and burger-menu */
-.burger {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 165px 77px 160px;
-}
-
-.burger__icons {
-    width: 110px;
-    height: 32px;
-    z-index: 1;
-}
-
 .burger-menu {
     position: fixed;
     top: 0;
