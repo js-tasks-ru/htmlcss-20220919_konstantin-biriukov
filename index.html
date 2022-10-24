@@ -35,22 +35,22 @@
         </div>
     </header>
 
-    <nav class="tabs">
-        <input type="radio" id="all-tab" value="all" name="tab" class="tabs__input" checked>
-        <input type="radio" id="atoms-tab" value="atoms" name="tab" class="tabs__input">
-        <input type="radio" id="molecules-tab" value="molecules" name="tab" class="tabs__input">
-        <input type="radio" id="organisms-tab" value="organisms" name="tab" class="tabs__input">
-        <div class="tabs__scroller">
-            <label for="all-tab" class="tabs__label">All components</label>
-            <label for="atoms-tab" class="tabs__label">Atoms</label>
-            <label for="molecules-tab" class="tabs__label">Molecules</label>
-            <label for="organisms-tab" class="tabs__label">Organisms</label>
-        </div>
+    <main class="preview">
+        <div class="container">
 
-        <hr>
+            <nav class="tabs">
+                <input type="radio" id="all-tab" value="all" name="tab" class="tabs__input" checked>
+                <input type="radio" id="atoms-tab" value="atoms" name="tab" class="tabs__input">
+                <input type="radio" id="molecules-tab" value="molecules" name="tab" class="tabs__input">
+                <input type="radio" id="organisms-tab" value="organisms" name="tab" class="tabs__input">
+                <div class="tabs__scroller">
+                    <label for="all-tab" class="tabs__label">All components</label>
+                    <label for="atoms-tab" class="tabs__label">Atoms</label>
+                    <label for="molecules-tab" class="tabs__label">Molecules</label>
+                    <label for="organisms-tab" class="tabs__label">Organisms</label>
+                </div>
 
-        <main class="preview">
-            <div class="container">
+                <div class="tabs__divider"></div>
 
                 <div class="tabs__content tabs__content_atoms">
                     Atoms (Coming Soon)
@@ -221,10 +221,9 @@
                         </div>
                     </a>
                 </div>
-            </div>
-        </main>
-    </nav>
-
+            </nav>
+        </div>
+    </main>
     <footer class="footer">
         <h2 class="footer__title">About</h2>
         <p class="footer__text">
