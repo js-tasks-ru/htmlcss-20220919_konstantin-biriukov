@@ -15,8 +15,8 @@
 
     border-radius: 8px;
     font: 400 normal 16px/24px Inter, sans-serif;
-    background: var(--white);
-    color: var(--grey-4);
+    background: var(--white-bg);
+    color: var(--input-text-color);
 }
 
 .modal__close {
@@ -25,13 +25,13 @@
     right: 12px;
     width: 20px;
     height: 20px;
-    color: var(--grey-4);
+    color: var(--input-text-color);
     cursor: pointer;
 }
 
 .modal__title {
     padding-bottom: 14px;
-    color: var(--blue-2);
+    color: var(--font-color);
     font: 600 normal 20px/24px Inter, sans-serif;
 }
 
