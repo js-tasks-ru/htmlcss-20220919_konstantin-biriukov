@@ -3,7 +3,7 @@
     margin-left: 56px;
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
-    background: var(--white);
+    background: var(--card-bg);
 }
 
 .components__top {
