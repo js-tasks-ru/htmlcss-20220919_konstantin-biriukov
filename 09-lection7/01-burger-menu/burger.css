@@ -9,3 +9,33 @@
     height: 32px;
     z-index: 1;
 }
+
+.burger__icon {
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    cursor: pointer;
+}
+
+.burger__icon_open {
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .burger {
+        padding: 17px 0 17px 0;
+        justify-content: center;
+        background: var(--white-2);
+    }
+
+    .burger__icons {
+        justify-content: center;
+    }
+
+    .burger__icon {
+        display: inline-block;
+    }
+}

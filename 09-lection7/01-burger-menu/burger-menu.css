@@ -14,7 +14,6 @@
     transform: translateX(0);
 }
 
-.burger__icon,
 .burger-menu__icon {
     display: none;
     width: 24px;
@@ -25,7 +24,6 @@
     cursor: pointer;
 }
 
-.burger__icon_open,
 .burger-menu__icon_close {
     display: inline-block;
 }
@@ -74,17 +72,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .burger {
-        padding: 17px 0 17px 0;
-        justify-content: center;
-        background: var(--white-2);
-    }
-
-    .burger__icons {
-        justify-content: center;
-    }
-
-    .burger__icon,
     .burger-menu__icon {
         display: inline-block;
     }
