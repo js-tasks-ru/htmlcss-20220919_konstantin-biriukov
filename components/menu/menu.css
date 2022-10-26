@@ -27,9 +27,17 @@
     color: var(--orange);
 }
 
-
 @media screen and (max-width: 768px) {
     .menu__inner {
         display: none;
+    }
+
+    .menu__items {
+        gap: 16px;
+        font: normal 400 16px/24px Inter, sans-serif;
+    }
+
+    .menu__back {
+        font: normal 400 16px/24px Inter, sans-serif;
     }
 }

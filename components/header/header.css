@@ -63,7 +63,7 @@
 
     .header__inner {
         padding: 17px 0 17px 0;
-        display: block;
+        justify-content: center;
         background: var(--white-2);
     }
 

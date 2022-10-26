@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./burger.css">
+    <link rel="stylesheet" href="./burger-menu.css">
+    <script defer src="./burger-menu.js"></script>
+    <title>Burger Menu</title>
+</head>
+<body>
+<div class="inner__page">
+    <header class="burger">
+        <button id="burger-menu-open">
+            <svg fill="none" class="burger__icon burger__icon_open">
+                <use href="../../assets/images/icons-sprite.svg#burger-menu"></use>
+            </svg>
+        </button>
+        <svg class="burger__icons" fill="none">
+            <use href="../../assets/images/icons-sprite.svg#header-icons"></use>
+        </svg>
+        <div class="burger-menu" id="burger-menu">
+            <button id="burger-menu-close">
+                <svg fill="none" class="burger-menu__icon burger-menu__icon_close">
+                    <use href="../../assets/images/icons-sprite.svg#burger-close"></use>
+                </svg>
+            </button>
 
-    </body>
+            <nav class="burger-menu__nav">
+                <h4 class="burger-menu__nav-title">Components</h4>
+                <div class="burger-menu__items">
+                    <p class="burger-menu__item">Modal</p>
+                    <p class="burger-menu__item">Tooltip</p>
+                    <p class="burger-menu__item">Avatar</p>
+                    <p class="burger-menu__item">Calendar</p>
+                    <p class="burger-menu__item">Histogram</p>
+                    <p class="burger-menu__item">Custom Form Elements</p>
+                </div>
+                <p class="burger-menu__back">Main Page</p>
+            </nav>
+
+        </div>
+    </header>
+
+</div>
+</body>
 </html>
