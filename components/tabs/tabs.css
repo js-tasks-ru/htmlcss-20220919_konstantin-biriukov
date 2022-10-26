@@ -1,0 +1,73 @@
+.tabs {
+    position: relative;
+}
+
+.tabs__input {
+    position: absolute;
+    appearance: none;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+
+.tabs__scroller {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+}
+
+.tabs__divider {
+    height: 1px;
+    width: 100vw;
+    background-color: var(--grey-2);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.tabs__label {
+    font: normal 400 16px/24px Inter, sans-serif;
+    color: var(--grey-3);
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.tabs__input[id="all-tab"]:checked ~ .tabs__scroller .tabs__label[for="all-tab"],
+.tabs__input[id="atoms-tab"]:checked ~ .tabs__scroller .tabs__label[for="atoms-tab"],
+.tabs__input[id="molecules-tab"]:checked ~ .tabs__scroller .tabs__label[for="molecules-tab"],
+.tabs__input[id="organisms-tab"]:checked ~ .tabs__scroller .tabs__label[for="organisms-tab"],
+.tabs__input[id="all-tab"]:hover ~ .tabs__scroller .tabs__label[for="all-tab"],
+.tabs__input[id="atoms-tab"]:hover ~ .tabs__scroller .tabs__label[for="atoms-tab"],
+.tabs__input[id="molecules-tab"]:hover ~ .tabs__scroller .tabs__label[for="molecules-tab"],
+.tabs__input[id="organisms-tab"]:hover ~ .tabs__scroller .tabs__label[for="organisms-tab"] {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}
+
+.tabs__content_atoms,
+.tabs__content_molecules,
+.tabs__content_organisms {
+    display: none;
+}
+
+.tabs__input[id="all-tab"]:checked ~ .preview .tabs__content,
+.tabs__input[id="atoms-tab"]:checked ~ .preview .tabs__content,
+.tabs__input[id="molecules-tab"]:checked ~ .preview .tabs__content,
+.tabs__input[id="organisms-tab"]:checked ~ .preview .tabs__content {
+    display: none;
+}
+
+.tabs__input[id="all-tab"]:checked ~ .tabs__content_all {
+    display: flex;
+}
+
+.tabs__input[id="atoms-tab"]:checked ~ .tabs__content_atoms {
+    display: flex;
+}
+
+.tabs__input[id="molecules-tab"]:checked ~ .tabs__content_molecules {
+    display: flex;
+}
+
+.tabs__input[id="organisms-tab"]:checked ~ .tabs__content_organisms {
+    display: flex;
+}
