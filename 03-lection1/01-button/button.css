@@ -10,7 +10,7 @@
     font: 16px/18.75 Roboto, sans-serif;
     font-weight: 500;
     cursor: pointer;
-    color: var(--font-color);
+    color: var(--white);
 }
 
 .button_primary {

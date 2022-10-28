@@ -6,3 +6,13 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.preview__calendar {
+    width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .preview__calendar {
+        width: 100%;
+    }
+}

@@ -12,13 +12,13 @@
 .tabs__scroller {
     display: flex;
     gap: 40px;
-    overflow-x: auto;
+    padding: 0 106px 0 42px;
 }
 
 .tabs__divider {
     height: 1px;
-    width: 100vw;
-    background-color: var(--grey-2);
+    width: 100%;
+    background-color: var(--active-text-color);
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
@@ -26,33 +26,44 @@
 
 .tabs__label {
     font: normal 400 16px/24px Inter, sans-serif;
-    color: var(--grey-3);
+    color: var(--text-secondary);
     padding-bottom: 8px;
     cursor: pointer;
+}
+
+.tabs__content {
+    overflow-x: auto;
 }
 
 .tabs__input[id="all-tab"]:checked ~ .tabs__scroller .tabs__label[for="all-tab"],
 .tabs__input[id="atoms-tab"]:checked ~ .tabs__scroller .tabs__label[for="atoms-tab"],
 .tabs__input[id="molecules-tab"]:checked ~ .tabs__scroller .tabs__label[for="molecules-tab"],
 .tabs__input[id="organisms-tab"]:checked ~ .tabs__scroller .tabs__label[for="organisms-tab"],
+.tabs__input[id="html-tab"]:checked ~ .tabs__scroller .tabs__label[for="html-tab"],
+.tabs__input[id="css-tab"]:checked ~ .tabs__scroller .tabs__label[for="css-tab"],
 .tabs__input[id="all-tab"]:hover ~ .tabs__scroller .tabs__label[for="all-tab"],
 .tabs__input[id="atoms-tab"]:hover ~ .tabs__scroller .tabs__label[for="atoms-tab"],
 .tabs__input[id="molecules-tab"]:hover ~ .tabs__scroller .tabs__label[for="molecules-tab"],
-.tabs__input[id="organisms-tab"]:hover ~ .tabs__scroller .tabs__label[for="organisms-tab"] {
-    color: var(--black);
-    border-bottom: 5px solid var(--black);
+.tabs__input[id="organisms-tab"]:hover ~ .tabs__scroller .tabs__label[for="organisms-tab"],
+.tabs__input[id="html-tab"]:hover ~ .tabs__scroller .tabs__label[for="html-tab"],
+.tabs__input[id="css-tab"]:hover ~ .tabs__scroller .tabs__label[for="css-tab"] {
+    color: var(--text-primary);
+    border-bottom: 5px solid var(--text-primary);
 }
 
 .tabs__content_atoms,
 .tabs__content_molecules,
-.tabs__content_organisms {
+.tabs__content_organisms,
+.tabs__content_css {
     display: none;
 }
 
 .tabs__input[id="all-tab"]:checked ~ .preview .tabs__content,
 .tabs__input[id="atoms-tab"]:checked ~ .preview .tabs__content,
 .tabs__input[id="molecules-tab"]:checked ~ .preview .tabs__content,
-.tabs__input[id="organisms-tab"]:checked ~ .preview .tabs__content {
+.tabs__input[id="organisms-tab"]:checked ~ .preview .tabs__content,
+.tabs__input[id="html-tab"]:checked ~ .components__bottom .tabs__content,
+.tabs__input[id="css-tab"]:checked ~ .components__bottom .tabs__content {
     display: none;
 }
 
@@ -69,5 +80,13 @@
 }
 
 .tabs__input[id="organisms-tab"]:checked ~ .tabs__content_organisms {
+    display: flex;
+}
+
+.tabs__input[id="html-tab"]:checked ~ .components__bottom .tabs__content_html {
+    display: flex;
+}
+
+.tabs__input[id="css-tab"]:checked ~ .components__bottom .tabs__content_css {
     display: flex;
 }

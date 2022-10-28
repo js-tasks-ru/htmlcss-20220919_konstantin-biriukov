@@ -4,3 +4,10 @@
     grid-template-rows: 1fr 1fr;
     gap: 30px;
 }
+
+@media screen and (max-width: 1400px) {
+    .form__inputs {
+        display: flex;
+        flex-direction: column;
+    }
+}

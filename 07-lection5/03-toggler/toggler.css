@@ -43,7 +43,14 @@
 
 .toggler__title {
     font: normal 400 16px/24px Inter, sans-serif;
-    color: var(--grey-4);
+    color: var(--text-primary);
+}
+
+.toggler__theme {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
 }
 
 /* checked */
