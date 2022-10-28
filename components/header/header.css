@@ -61,6 +61,25 @@
     color: var(--text-secondary);
 }
 
+/* header burger icon */
+.header__burger-open {
+    display: none;
+}
+
+.header__burger-open_icon {
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    cursor: pointer;
+}
+
+.header__burger-open_icon-open {
+    display: inline-block;
+}
+
 @media screen and (max-width: 768px) {
     .header {
         padding: 17px 0 69px 16px;
@@ -89,7 +108,10 @@
         display: none;
     }
 
-    .header__burger {
+    .header__burger,
+    .header__burger-open,
+    .header__burger-open_icon {
         display: inline-block;
     }
+
 }

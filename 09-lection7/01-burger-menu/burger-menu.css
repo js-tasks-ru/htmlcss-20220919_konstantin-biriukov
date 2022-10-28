@@ -25,10 +25,6 @@
     cursor: pointer;
 }
 
-.burger-menu__open {
-    display: none;
-}
-
 .burger-menu__icon_close {
     display: inline-block;
 }
@@ -86,8 +82,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .burger-menu__icon,
-    .burger-menu__open {
+    .burger-menu__icon {
         display: inline-block;
     }
 
