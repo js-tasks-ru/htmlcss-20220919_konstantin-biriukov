@@ -35,6 +35,15 @@
     margin: auto;
 }
 
+.card__custom-form-elements_preview {
+    padding: 50px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+}
+
 @media screen and (max-width: 768px){
     .card__custom-form-elements {
         display: flex;

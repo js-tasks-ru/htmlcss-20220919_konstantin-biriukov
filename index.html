@@ -26,15 +26,9 @@
 <div class="page">
     <header class="header">
         <div class="container">
-            <div class="header__icons">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="30" height="30"/>
-                </svg>
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="32" height="32" rx="16"/>
-                </svg>
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0L32 32H0V0Z"/>
+            <div class="header__container">
+                <svg class="header__icons" fill="currentColor">
+                    <use href="./assets/images/icons-sprite.svg#header-icons"></use>
                 </svg>
                 <input type="checkbox" id="theme-changer">
             </div>
@@ -71,7 +65,7 @@
                 <div class="preview__cards tabs__content tabs__content_all">
 
                     <a class="card">
-                        <div class="tooltip" style="margin: auto;">
+                        <div class="tooltip">
                             <svg class="tooltip__trigger">
                                 <use href="./assets/images/icons-sprite.svg#tooltip"></use>
                             </svg>
@@ -84,7 +78,7 @@
                     </a>
 
                     <a class="card">
-                        <div class="card__custom-form-elements">
+                        <div class="card__custom-form-elements_preview">
 
                             <label class="checkbox checkbox_default">
                                 <input type="checkbox" name="checkbox" value="1" class="checkbox__input">
@@ -219,7 +213,7 @@
                     </a>
 
                     <div class="card">
-                        <div class="histogram__card" style="width: 70%; height: 40%; margin: auto;">
+                        <div class="histogram__card" style="min-width: 100px; width: 70%; height: 40%; margin: auto;">
                             <div class="histogram__header">
                                 <p class="histogram__title">Total Orders</p>
                                 <a class="histogram__link">View All</a>

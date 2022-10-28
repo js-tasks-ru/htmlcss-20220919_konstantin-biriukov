@@ -3,6 +3,11 @@
     background: var(--grey-bg);
 }
 
+.header__container {
+    display: flex;
+    flex-direction: row;
+}
+
 .header__burger {
     display: none;
     width: 24px;
@@ -21,8 +26,6 @@
 
 .header__icons {
     height: 32px;
-    display: flex;
-    gap: 8px;
     color: var(--black);
 }
 
