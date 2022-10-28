@@ -11,10 +11,6 @@
     z-index: 2;
 }
 
-.burger__menu_open {
-    display: none;
-}
-
 .burger-menu[data-open] {
     transform: translateX(0);
 }

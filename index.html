@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="stylesheet" href="./03-lection1/01-button/button.css">
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
 
     <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
@@ -18,23 +20,73 @@
 
     <link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css">
     <link rel="stylesheet" href="./07-lection5/02-radio/radio.css">
+    <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css">
 
+
+    <link rel="stylesheet" href="./09-lection7/01-burger-menu/burger.css">
+    <link rel="stylesheet" href="./09-lection7/01-burger-menu/burger-menu.css">
+
+    <script defer src="./09-lection7/01-burger-menu/burger-menu.js"></script>
     <script defer src="./10-lection8/01-theme-changer/theme-changer.js"></script>
 </head>
 <body>
 
 <div class="page">
-    <header class="header">
-        <div class="container">
-            <div class="header__container">
-                <svg class="header__icons" fill="currentColor">
-                    <use href="./assets/images/icons-sprite.svg#header-icons"></use>
+    <header class="header header__main">
+        <a class="header__link" href="#">
+            <svg class="header__icons" fill="currentColor">
+                <use href="./assets/images/icons-sprite.svg#header-icons"></use>
+            </svg>
+        </a>
+
+        <button class="burger-menu__open" id="burger-menu-open">
+            <svg fill="none" class="burger__icon burger__icon_open">
+                <use href="./assets/images/icons-sprite.svg#burger-menu"></use>
+            </svg>
+        </button>
+
+        <div class="burger-menu" id="burger-menu">
+            <button id="burger-menu-close">
+                <svg fill="none" class="burger-menu__icon burger-menu__icon_close">
+                    <use href="./assets/images/icons-sprite.svg#burger-close"></use>
                 </svg>
-                <input type="checkbox" id="theme-changer">
-            </div>
-            <h1 class="header__title">Reusable Component Library</h1>
+            </button>
+
+            <nav class="burger-menu__nav">
+                <h4 class="burger-menu__nav-title">Components</h4>
+                <div class="burger-menu__items">
+                    <a class="burger-menu__item" href="./pages/inner-page.html">Modal</a>
+                    <a class="burger-menu__item" href="./pages/tooltip.html">Tooltip</a>
+                    <a class="burger-menu__item" href="./pages/avatar.html">Avatar</a>
+                    <a class="burger-menu__item" href="./pages/calendar.html">Calendar</a>
+                    <a class="burger-menu__item" href="./pages/histogram.html">Histogram</a>
+                    <a class="burger-menu__item" href="./pages/custom-form-elements.html">Custom Form Elements</a>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="header__toggler">
+            <label class="toggler toggler_default toggler__theme">
+                <input type="checkbox" name="toggler" value="1" class="toggler__input" id="theme-changer">
+
+                <svg class="toggler_light" width="24px" height="24px">
+                    <use href="./assets/images/icons-sprite.svg#sun"></use>
+                </svg>
+                <div class="toggler__state">
+                    <div class="toggler__control">
+                        <div class="toggler__icon-inner"></div>
+                    </div>
+                </div>
+                <svg class="toggler_dark" fill="none" width="24px" height="24px">
+                    <use href="./assets/images/icons-sprite.svg#moon"></use>
+                </svg>
+            </label>
+
         </div>
     </header>
+
+    <h1 class="header__title">Reusable Component Library</h1>
 
     <main class="preview">
         <div class="container">
@@ -43,14 +95,14 @@
                 <input type="radio" id="atoms-tab" value="atoms" name="tab" class="tabs__input">
                 <input type="radio" id="molecules-tab" value="molecules" name="tab" class="tabs__input">
                 <input type="radio" id="organisms-tab" value="organisms" name="tab" class="tabs__input">
-                <div class="tabs__scroller">
+                <div class="tabs__scroller" style="padding-left: 0;">
                     <label for="all-tab" class="tabs__label">All components</label>
                     <label for="atoms-tab" class="tabs__label">Atoms</label>
                     <label for="molecules-tab" class="tabs__label">Molecules</label>
                     <label for="organisms-tab" class="tabs__label">Organisms</label>
                 </div>
 
-                <div class="tabs__divider"></div>
+                <div class="tabs__divider tabs__divider_full-viewport"></div>
 
                 <div class="tabs__content tabs__content_atoms">
                     Atoms (Coming Soon)
@@ -277,4 +329,6 @@
     </footer>
 </div>
 </body>
+<script src="./05-lection3/02-modal/index.js"></script>
+
 </html>
