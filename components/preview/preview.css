@@ -72,4 +72,8 @@
     .preview__section {
         padding: 0 15px;
     }
+
+    .preview__header-text {
+        font: 500 normal 26px/30px Inter, sans-serif;
+    }
 }
