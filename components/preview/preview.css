@@ -59,6 +59,10 @@
         width: 100%;
     }
 
+    .preview__calendar_wrapper {
+        align-self: start;
+    }
+
     .preview__cards_atoms {
         flex-direction: column;
     }

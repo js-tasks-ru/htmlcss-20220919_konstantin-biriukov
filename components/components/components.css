@@ -7,7 +7,7 @@
 }
 
 .components__top {
-    padding: 32px 48px 64px;
+    padding: 32px 48px;
     display: flex;
     flex-direction: column;
 }
@@ -34,13 +34,5 @@
         min-width: 0;
         height: 100%;
         border-radius: 0;
-    }
-
-    .components__top, .components__bottom {
-        padding: 16px 16px 0 16px;
-    }
-
-    .components__component {
-        align-self: center;
     }
 }
