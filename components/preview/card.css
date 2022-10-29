@@ -48,9 +48,17 @@
     pointer-events: none;
 }
 
+.card_placeholder {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 768px){
     .card__custom-form-elements {
         display: flex;
         flex-direction: column;
+    }
+
+    .card_placeholder {
+        display: none;
     }
 }

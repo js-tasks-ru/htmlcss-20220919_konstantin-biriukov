@@ -79,6 +79,10 @@
     display: flex;
     flex-direction: column;
     overflow-x: visible;
+
+    flex-wrap: wrap;
+    max-width: 1110px;
+    margin: 0 auto;
 }
 
 .tabs__input[id="html-tab"]:checked ~ .components__bottom .tabs__content_html,
@@ -89,5 +93,13 @@
 @media screen and (max-width: 768px) {
     .tabs__label {
         font: normal 400 12px/18px Inter, sans-serif;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .tabs__input[id="atoms-tab"]:checked ~ .tabs__content_atoms,
+    .tabs__input[id="molecules-tab"]:checked ~ .tabs__content_molecules,
+    .tabs__input[id="organisms-tab"]:checked ~ .tabs__content_organisms {
+        overflow-x: auto;
     }
 }
