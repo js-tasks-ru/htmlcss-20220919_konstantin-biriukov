@@ -10,8 +10,41 @@
     margin: 0 auto;
 }
 
+.preview__header-text {
+
+}
+
 .preview__calendar {
     width: 30%;
+}
+
+.preview__tooltip-avatar {
+    display: flex;
+}
+
+/* preview__buttons */
+.preview__buttons {
+    margin: 64px 0 32px 0;
+}
+
+.preview__buttons_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px 32px;
+}
+
+.preview__buttons-row-header {
+    place-self: center;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font: 500 normal 12px/18px Inter, sans-serif;
+    color: var(--active-text-color);
+}
+
+.preview__buttons-row-header_disabled {
+    color: var(--grey-3);
 }
 
 @media screen and (max-width: 768px) {

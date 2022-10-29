@@ -41,3 +41,7 @@
 .tooltip__trigger:hover ~ .tooltip__helper {
     display: block;
 }
+
+.tooltip_preview {
+    transform: translateY(200%);
+}
