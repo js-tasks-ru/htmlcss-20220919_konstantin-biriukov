@@ -56,6 +56,24 @@
             </button>
 
             <nav class="burger-menu__nav">
+                <div class="burger-menu__toggler">
+                    <label class="toggler toggler_default toggler__theme">
+                        <input type="checkbox" name="toggler" value="2" class="toggler__input"
+                               id="theme-changer-burger">
+
+                        <svg class="toggler_light" width="24px" height="24px">
+                            <use href="../assets/images/icons-sprite.svg#sun"></use>
+                        </svg>
+                        <div class="toggler__state">
+                            <div class="toggler__control">
+                                <div class="toggler__icon-inner"></div>
+                            </div>
+                        </div>
+                        <svg class="toggler_dark" fill="none" width="24px" height="24px">
+                            <use href="../assets/images/icons-sprite.svg#moon"></use>
+                        </svg>
+                    </label>
+                </div>
                 <h4 class="burger-menu__nav-title">Components</h4>
                 <div class="burger-menu__items">
                     <a class="burger-menu__item burger-menu__item_active" href="#">Modal</a>
