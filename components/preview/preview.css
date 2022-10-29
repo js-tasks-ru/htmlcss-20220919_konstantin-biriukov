@@ -1,10 +1,13 @@
 .preview {
     background: var(--grey-bg);
+    min-width: 1500px;
 }
 
 .preview__cards {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1110px;
+    margin: 0 auto;
 }
 
 .preview__calendar {
@@ -12,6 +15,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .preview {
+        min-width: 360px;
+    }
+
     .preview__calendar {
         width: 100%;
     }

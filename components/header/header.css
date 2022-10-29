@@ -23,6 +23,7 @@
 }
 
 .header__title {
+    display: flex;
     max-width: 1110px;
     width: 100%;
     margin: 40px auto;
@@ -34,6 +35,10 @@
 .header__icons {
     height: 32px;
     color: var(--black);
+}
+
+.header__icons_grey {
+    color: var(--dark-bg);
 }
 
 .header__link {
@@ -74,6 +79,7 @@
     top: 20px;
     left: 16px;
     cursor: pointer;
+    color: var(--grey-4);
 }
 
 .header__burger-open_icon-open {
@@ -88,6 +94,7 @@
     .header__title {
         font: 400 normal 28px/38px Inter, sans-serif;
         color: var(--grey-4);
+        justify-content: center;
     }
 
     .header__inner {

@@ -57,3 +57,9 @@
     background: var(--blue);
     color: var(--white);
 }
+
+.calendar_preview {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}

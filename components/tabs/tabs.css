@@ -13,6 +13,8 @@
     display: flex;
     gap: 40px;
     padding: 0 106px 0 42px;
+    white-space: nowrap;
+    background: var(--main-bg);
 }
 
 .tabs__divider {
@@ -22,10 +24,6 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-}
-
-.tabs__divider_full-viewport {
-    width: 100vw;
 }
 
 .tabs__label {
@@ -93,4 +91,10 @@
 
 .tabs__input[id="css-tab"]:checked ~ .components__bottom .tabs__content_css {
     display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .tabs__label {
+        font: normal 400 12px/18px Inter, sans-serif;
+    }
 }

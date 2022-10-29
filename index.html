@@ -34,7 +34,7 @@
 <div class="page">
     <header class="header header__main">
         <a class="header__link" href="#">
-            <svg class="header__icons" fill="currentColor">
+            <svg class="header__icons header__icons_grey" fill="currentColor">
                 <use href="./assets/images/icons-sprite.svg#header-icons"></use>
             </svg>
         </a>
@@ -90,19 +90,20 @@
 
     <main class="preview">
         <div class="container">
+
             <nav class="tabs">
                 <input type="radio" id="all-tab" value="all" name="tab" class="tabs__input" checked>
                 <input type="radio" id="atoms-tab" value="atoms" name="tab" class="tabs__input">
                 <input type="radio" id="molecules-tab" value="molecules" name="tab" class="tabs__input">
                 <input type="radio" id="organisms-tab" value="organisms" name="tab" class="tabs__input">
-                <div class="tabs__scroller" style="padding-left: 0;">
+                <div class="tabs__scroller" style="justify-content: center;">
                     <label for="all-tab" class="tabs__label">All components</label>
                     <label for="atoms-tab" class="tabs__label">Atoms</label>
                     <label for="molecules-tab" class="tabs__label">Molecules</label>
                     <label for="organisms-tab" class="tabs__label">Organisms</label>
                 </div>
 
-                <div class="tabs__divider tabs__divider_full-viewport"></div>
+                <div class="tabs__divider"></div>
 
                 <div class="tabs__content tabs__content_atoms">
                     Atoms (Coming Soon)
@@ -116,8 +117,8 @@
 
                 <div class="preview__cards tabs__content tabs__content_all">
 
-                    <a class="card">
-                        <div class="tooltip">
+                    <a class="card" href="./pages/tooltip.html">
+                        <div class="tooltip card_preview">
                             <svg class="tooltip__trigger">
                                 <use href="./assets/images/icons-sprite.svg#tooltip"></use>
                             </svg>
@@ -129,8 +130,8 @@
                         </div>
                     </a>
 
-                    <a class="card">
-                        <div class="card__custom-form-elements_preview">
+                    <a class="card" href="./pages/custom-form-elements.html">
+                        <div class="card__custom-form-elements_preview card_preview">
 
                             <label class="checkbox checkbox_default">
                                 <input type="checkbox" name="checkbox" value="1" class="checkbox__input">
@@ -183,8 +184,8 @@
                         </div>
                     </a>
 
-                    <a class="card">
-                        <div class="calendar" style="width:50%; height: 50%; margin: auto;">
+                    <a class="card" href="./pages/calendar.html">
+                        <div class="calendar calendar_preview card_preview">
                             <header class="calendar__title">October 2019</header>
 
                             <div class="calendar__wrapper">
@@ -238,8 +239,8 @@
                         </div>
                     </a>
 
-                    <a class="card">
-                        <div id="modal" class="modal modal_preview">
+                    <a class="card" href="./pages/inner-page.html">
+                        <div id="modal" class="modal modal_preview card_preview">
                             <main class="modal__window">
                                 <svg id="modal-close" class="modal__close">
                                     <use href="./assets/images/icons-sprite.svg#modal"></use>
@@ -264,8 +265,8 @@
                         </div>
                     </a>
 
-                    <div class="card">
-                        <div class="histogram__card" style="min-width: 100px; width: 70%; height: 40%; margin: auto;">
+                    <div class="card" onclick="location.href='./pages/histogram.html'" style="cursor: pointer">
+                        <div class="histogram__card histogram_preview card_preview">
                             <div class="histogram__header">
                                 <p class="histogram__title">Total Orders</p>
                                 <a class="histogram__link">View All</a>
@@ -303,8 +304,8 @@
                         </div>
                     </div>
 
-                    <a class="card">
-                        <div class="avatar avatar_preview">
+                    <a class="card" href="./pages/avatar.html">
+                        <div class="avatar avatar_preview card_preview">
                             <img src="./06-lection4/01-avatar/public/avatar-200.jpg" alt="user's avatar"
                                  class="avatar__img">
                         </div>
