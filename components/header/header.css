@@ -79,7 +79,7 @@
     top: 20px;
     left: 16px;
     cursor: pointer;
-    color: var(--grey-4);
+    color: var(--grey-3);
 }
 
 .header__burger-open_icon-open {

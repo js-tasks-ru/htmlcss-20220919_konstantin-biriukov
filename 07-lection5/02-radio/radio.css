@@ -27,7 +27,7 @@
     height: 28px;
 
     background: var(--grey-bg);
-    border: 1px solid var(--active-text-color);
+    border: 1px solid var(--grey-2);
     border-radius: 50%;
 }
 
