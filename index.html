@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 
+    <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
     <link rel="stylesheet" href="./03-lection1/01-button/button.css">
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
 
@@ -21,6 +22,8 @@
     <link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css">
     <link rel="stylesheet" href="./07-lection5/02-radio/radio.css">
     <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css">
+    <link rel="stylesheet" href="./07-lection5/04-input/form-inputs.css">
+    <link rel="stylesheet" href="./07-lection5/04-input/input.css">
 
 
     <link rel="stylesheet" href="./09-lection7/01-burger-menu/burger.css">
@@ -129,7 +132,7 @@
 
                 <div class="preview__cards tabs__content tabs__content_atoms">
 
-                    <div class="preview__cards_atoms">
+                    <div class="preview__cards_flex">
                         <a class="card" href="./pages/tooltip.html">
                             <div class="tooltip tooltip_preview card_preview">
                                 <svg class="tooltip__trigger">
@@ -154,13 +157,12 @@
                                 <div class="card__text_small">Atom</div>
                             </div>
                         </a>
-                        <a class="card card_placeholder">
-                        </a>
+                        <a class="card card_placeholder"></a>
                     </div>
 
 
                     <div class="preview__section preview__buttons">
-                        <h3 class="preview__header-text">BUTTONS</h3>
+                        <h3 class="preview__header-text">Buttons</h3>
                         <div class="preview__buttons_grid">
                             <h5 class="preview__buttons-row-header">Default</h5>
                             <h5 class="preview__buttons-row-header preview__buttons-row-header_disabled">Disabled</h5>
@@ -174,7 +176,7 @@
                     </div>
 
                     <div class="preview__section preview__custom-form-elements">
-                        <h3 class="preview__header-text">CUSTOM FORM ELEMENTS</h3>
+                        <h3 class="preview__header-text">Custom form elements</h3>
                         <div class="card__custom-form-elements">
 
                             <label class="checkbox checkbox_default">
@@ -278,11 +280,199 @@
 
 
                 <div class="tabs__content tabs__content_molecules">
-                    Molecules (Coming Soon)
+
+                    <div class="preview__cards_flex">
+                        <a class="card" href="./pages/custom-form-elements.html">
+                            <div class="card__custom-form-elements_preview card_preview">
+
+                                <label class="checkbox checkbox_default">
+                                    <input type="checkbox" name="checkbox" value="1" class="checkbox__input">
+                                    <div class="checkbox__state">
+                                        <div class="checkbox__control">
+                                            <svg class="checkbox__icon" fill="none">
+                                                <use href="./assets/images/icons-sprite.svg#checkbox"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="checkbox__title">Default</p>
+                                    </div>
+                                </label>
+
+                                <label class="radio radio_default">
+                                    <input type="radio" name="radio-btn-2" value="1" class="radio__input">
+                                    <div class="radio__state">
+                                        <div class="radio__control">
+                                            <div class="radio__icon-inner"></div>
+                                        </div>
+                                        <p class="radio__title">Default</p>
+                                    </div>
+                                </label>
+
+                                <label class="checkbox checkbox_checked">
+                                    <input type="checkbox" name="checkbox" value="2" class="checkbox__input" checked>
+                                    <div class="checkbox__state">
+                                        <div class="checkbox__control">
+                                            <svg class="checkbox__icon" fill="none">
+                                                <use href="./assets/images/icons-sprite.svg#checkbox"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="checkbox__title">Checked</p>
+                                    </div>
+                                </label>
+
+                                <label class="radio radio_selected">
+                                    <input type="radio" name="radio-btn-2" value="2" class="radio__input" checked>
+                                    <div class="radio__state">
+                                        <div class="radio__control">
+                                            <div class="radio__icon-inner"></div>
+                                        </div>
+                                        <p class="radio__title">Selected</p>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="card__text">
+                                <div>Custom form elements</div>
+                                <div class="card__text_small">Molecules</div>
+                            </div>
+                        </a>
+
+                        <a class="card" href="./pages/calendar.html">
+                            <div class="calendar calendar_preview card_preview">
+                                <header class="calendar__title">October 2019</header>
+
+                                <div class="calendar__wrapper">
+                                    <main class="calendar__main">
+                                        <span class="calendar__item calendar__item_day">Mon</span>
+                                        <span class="calendar__item calendar__item_day">Tue</span>
+                                        <span class="calendar__item calendar__item_day">Wen</span>
+                                        <span class="calendar__item calendar__item_day">Thu</span>
+                                        <span class="calendar__item calendar__item_day">Fri</span>
+                                        <span class="calendar__item calendar__item_day">Sat</span>
+                                        <span class="calendar__item calendar__item_day">Sun</span>
+
+                                        <span class="calendar__item calendar__item_start">1</span>
+                                        <span class="calendar__item">2</span>
+                                        <span class="calendar__item">3</span>
+                                        <span class="calendar__item">4</span>
+                                        <span class="calendar__item">5</span>
+                                        <span class="calendar__item">6</span>
+                                        <span class="calendar__item">7</span>
+                                        <span class="calendar__item">8</span>
+                                        <span class="calendar__item">9</span>
+                                        <span class="calendar__item">10</span>
+                                        <span class="calendar__item">11</span>
+                                        <span class="calendar__item">12</span>
+                                        <span class="calendar__item">13</span>
+                                        <span class="calendar__item">14</span>
+                                        <span class="calendar__item">15</span>
+                                        <span class="calendar__item">16</span>
+                                        <span class="calendar__item">17</span>
+                                        <span class="calendar__item calendar__item_side">18</span>
+                                        <span class="calendar__item calendar__item_range">19</span>
+                                        <span class="calendar__item calendar__item_range">20</span>
+                                        <span class="calendar__item calendar__item_range">21</span>
+                                        <span class="calendar__item calendar__item_range">22</span>
+                                        <span class="calendar__item calendar__item_side">23</span>
+                                        <span class="calendar__item">24</span>
+                                        <span class="calendar__item">25</span>
+                                        <span class="calendar__item">26</span>
+                                        <span class="calendar__item">27</span>
+                                        <span class="calendar__item">28</span>
+                                        <span class="calendar__item">29</span>
+                                        <span class="calendar__item">30</span>
+                                        <span class="calendar__item">31</span>
+                                    </main>
+                                </div>
+
+                            </div>
+                            <div class="card__text">
+                                <div>Calendar</div>
+                                <div class="card__text_small">Molecule</div>
+                            </div>
+                        </a>
+
+                        <a class="card card_placeholder"></a>
+                    </div>
+
+
+                    <div class="preview__section">
+                        <h3 class="preview__header-text">Skeleton</h3>
+                        <div class="skeleton preview__skeleton">
+                            <div class="skeleton__top">
+                                <div class="skeleton__circle"></div>
+                                <div class="skeleton__lines">
+                                    <div class="skeleton__line skeleton__line_small"></div>
+                                    <div class="skeleton__line skeleton__line_medium"></div>
+                                </div>
+                            </div>
+                            <div class="skeleton__bottom">
+                                <div class="skeleton__lines">
+                                    <div class="skeleton__line skeleton__line_large"></div>
+                                    <div class="skeleton__line skeleton__line_large"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="preview__section preview__custom-form-elements">
+                        <h3 class="preview__header-text">Custom form elements</h3>
+
+                        <div class="form__inputs card__custom-form-elements" style="padding-left: 0;">
+                            <div class="form-group form-group_default">
+                                <label class="form-group__label" for="default">Label</label>
+                                <div class="form-group__wrapper">
+                                    <input class="form-group__input" type="text" name="default" id="default"
+                                           placeholder="Placeholder">
+                                </div>
+                            </div>
+
+                            <div class="form-group form-group_focus">
+                                <label class="form-group__label" for="focus">Focus</label>
+                                <div class="form-group__wrapper">
+                                    <input class="form-group__input" type="text" name="focus" id="focus"
+                                           value="Filled Input" autofocus>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-group_success">
+                                <label class="form-group__label" for="success">Success</label>
+                                <div class="form-group__wrapper">
+                                    <input class="form-group__input" type="text" name="success" id="success"
+                                           value="Success">
+                                    <svg class="form-group__icon form-group__icon_success" fill="none">
+                                        <use href="./assets/images/icons-sprite.svg#input-success"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-group_error">
+                                <label class="form-group__label" for="error">Error</label>
+                                <div class="form-group__wrapper">
+                                    <input class="form-group__input" type="text" name="error" id="error"
+                                           value="Error">
+                                    <svg class="form-group__icon form-group__icon_error" fill="none">
+                                        <use href="./assets/images/icons-sprite.svg#input-error"></use>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-group_disabled">
+                                <label class="form-group__label" for="disabled">Disabled</label>
+                                <div class="form-group__wrapper">
+                                    <input class="form-group__input" type="text" name="disabled" id="disabled"
+                                           placeholder="Disabled" disabled>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
+
                 <div class="tabs__content tabs__content_organisms">
                     Organisms (Coming Soon)
                 </div>
+
 
                 <div class="preview__cards tabs__content tabs__content_all">
 

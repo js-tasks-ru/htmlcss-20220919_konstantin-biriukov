@@ -12,14 +12,16 @@
 
 .preview__header-text {
     color: var(--text-secondary);
-    font: 500 normal 38px/46px Inter, sans-serif;
+    font: 500 normal 32px/42px Inter, sans-serif;
+    margin-bottom: 32px;
+    text-transform: uppercase;
 }
 
 .preview__calendar {
     width: 30%;
 }
 
-.preview__cards_atoms {
+.preview__cards_flex {
     display: flex;
 }
 
@@ -34,7 +36,6 @@
     grid-template-rows: repeat(2, auto);
     grid-auto-flow: column;
     gap: 16px 32px;
-    margin-top: 32px;
 }
 
 .preview__buttons-row-header {
@@ -50,6 +51,10 @@
     color: var(--grey-3);
 }
 
+.preview__skeleton {
+    max-width: 75%;
+}
+
 @media screen and (max-width: 768px) {
     .preview {
         min-width: 360px;
@@ -63,7 +68,7 @@
         align-self: start;
     }
 
-    .preview__cards_atoms {
+    .preview__cards_flex {
         flex-direction: column;
     }
 
@@ -79,5 +84,9 @@
 
     .preview__header-text {
         font: 500 normal 26px/30px Inter, sans-serif;
+    }
+
+    .preview__skeleton {
+        max-width: 100%;
     }
 }
