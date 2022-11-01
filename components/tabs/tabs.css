@@ -20,7 +20,7 @@
 .tabs__divider {
     height: 1px;
     width: 100%;
-    background-color: var(--active-text-color);
+    background-color: var(--grey-2);
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
@@ -64,8 +64,8 @@
 .tabs__input[id="atoms-tab"]:checked ~ .tabs__content,
 .tabs__input[id="molecules-tab"]:checked ~ .tabs__content,
 .tabs__input[id="organisms-tab"]:checked ~ .tabs__content,
-.tabs__input[id="html-tab"]:checked ~ .components__bottom .tabs__content,
-.tabs__input[id="css-tab"]:checked ~ .components__bottom .tabs__content {
+.tabs__input[id="html-tab"]:checked ~ .tabs__divider + div .tabs__content,
+.tabs__input[id="css-tab"]:checked ~ .tabs__divider + div .tabs__content {
     display: none;
 }
 
@@ -85,14 +85,18 @@
     margin: 0 auto;
 }
 
-.tabs__input[id="html-tab"]:checked ~ .components__bottom .tabs__content_html,
-.tabs__input[id="css-tab"]:checked ~ .components__bottom .tabs__content_css {
+.tabs__input[id="html-tab"]:checked ~ .tabs__divider + div .tabs__content_html,
+.tabs__input[id="css-tab"]:checked ~ .tabs__divider + div .tabs__content_css {
     display: flex;
 }
 
 @media screen and (max-width: 768px) {
     .tabs__label {
         font: normal 400 12px/18px Inter, sans-serif;
+    }
+
+    .tabs__scroller {
+        gap: 14px;
     }
 }
 

@@ -22,6 +22,7 @@
 }
 
 .card__text_small {
+    padding-top: 6px;
     font: normal 400 16px/19px Roboto, sans-serif;
     color: var(--font-color);
 }

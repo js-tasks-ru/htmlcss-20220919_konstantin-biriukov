@@ -33,11 +33,11 @@
 
 .radio__icon-inner {
     display: none;
-    width: 18.5px;
+    width: 18px;
     height: 18px;
     border-radius: 50%;
     background: var(--blue);
-    border: 3px solid var(--white)
+    border: 3px solid var(--grey-bg);
 }
 
 .radio__title {
