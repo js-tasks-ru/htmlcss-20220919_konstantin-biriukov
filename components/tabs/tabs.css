@@ -9,12 +9,22 @@
     clip: rect(0, 0, 0, 0);
 }
 
+.tabs__menu {
+    background: var(--main-bg);
+}
+
 .tabs__scroller {
     display: flex;
     gap: 40px;
-    padding: 0 106px 0 42px;
     white-space: nowrap;
-    background: var(--main-bg);
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.tabs__scroller_inner {
+    padding: 0 106px 0 42px;
+    margin: 0;
+    max-width: 0;
 }
 
 .tabs__divider {
@@ -97,6 +107,7 @@
 
     .tabs__scroller {
         gap: 14px;
+        padding: 0 106px 0 42px;
     }
 }
 
