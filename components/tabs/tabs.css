@@ -47,18 +47,19 @@
     overflow-x: auto;
 }
 
-.tabs__input[id="all-tab"]:checked ~ .tabs__scroller .tabs__label[for="all-tab"],
-.tabs__input[id="atoms-tab"]:checked ~ .tabs__scroller .tabs__label[for="atoms-tab"],
-.tabs__input[id="molecules-tab"]:checked ~ .tabs__scroller .tabs__label[for="molecules-tab"],
-.tabs__input[id="organisms-tab"]:checked ~ .tabs__scroller .tabs__label[for="organisms-tab"],
+.tabs__input[id="all-tab"]:checked ~ .tabs__menu .tabs__scroller .tabs__label[for="all-tab"],
+.tabs__input[id="atoms-tab"]:checked ~ .tabs__menu .tabs__scroller .tabs__label[for="atoms-tab"],
+.tabs__input[id="molecules-tab"]:checked ~  .tabs__menu .tabs__scroller .tabs__label[for="molecules-tab"],
+.tabs__input[id="organisms-tab"]:checked ~  .tabs__menu .tabs__scroller .tabs__label[for="organisms-tab"],
 .tabs__input[id="html-tab"]:checked ~ .tabs__scroller .tabs__label[for="html-tab"],
 .tabs__input[id="css-tab"]:checked ~ .tabs__scroller .tabs__label[for="css-tab"],
-.tabs__input[id="all-tab"]:hover ~ .tabs__scroller .tabs__label[for="all-tab"],
-.tabs__input[id="atoms-tab"]:hover ~ .tabs__scroller .tabs__label[for="atoms-tab"],
-.tabs__input[id="molecules-tab"]:hover ~ .tabs__scroller .tabs__label[for="molecules-tab"],
-.tabs__input[id="organisms-tab"]:hover ~ .tabs__scroller .tabs__label[for="organisms-tab"],
-.tabs__input[id="html-tab"]:hover ~ .tabs__scroller .tabs__label[for="html-tab"],
-.tabs__input[id="css-tab"]:hover ~ .tabs__scroller .tabs__label[for="css-tab"] {
+.tabs__input[id="all-tab"]:hover ~ .tabs__menu .tabs__scroller .tabs__label[for="all-tab"],
+.tabs__input[id="atoms-tab"]:hover ~ .tabs__menu .tabs__scroller .tabs__label[for="atoms-tab"],
+.tabs__input[id="molecules-tab"]:hover ~ .tabs__menu .tabs__scroller .tabs__label[for="molecules-tab"],
+.tabs__input[id="organisms-tab"]:hover ~ .tabs__menu .tabs__scroller .tabs__label[for="organisms-tab"],
+.tabs__input[id="html-tab"]:hover ~ .tabs__menu .tabs__scroller .tabs__label[for="html-tab"],
+.tabs__input[id="css-tab"]:hover ~ .tabs__menu .tabs__scroller .tabs__label[for="css-tab"]
+{
     color: var(--text-primary);
     border-bottom: 5px solid var(--text-primary);
 }
