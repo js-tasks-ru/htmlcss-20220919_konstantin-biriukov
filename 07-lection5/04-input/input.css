@@ -33,10 +33,10 @@
     box-shadow: 0 1px 1px rgba(51, 154, 240, 0.1);
     border-radius: 8px;
 
-    background: var(--white);
-    color: var(--grey-4);
     font: normal 400 20px/26px Inter, sans-serif;
     transition: border 250ms linear;
+    background: var(--card-bg);
+    color: var(--text-primary);
 }
 
 .form-group__icon {

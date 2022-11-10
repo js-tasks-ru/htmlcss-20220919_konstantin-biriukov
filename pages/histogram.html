@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!-- Histogram -->
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/unikitty-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <link rel="stylesheet" href="../04-lection2/01-histogram/histogram.css">
+
+    <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger.css">
+    <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
+
+    <link rel="stylesheet" href="../07-lection5/02-radio/radio.css">
+    <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
+
+    <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+    <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+    <style>
+        html[data-theme-dark] {
+            background: #000;
+        }
+    </style>
+
+    <title>Histogram</title>
+</head>
+<body>
+
+<div class="inner__page">
+    <header class="header__inner">
+
+        <a class="header__link" href="../index.html">
+            <svg class="header__icons" fill="currentColor">
+                <use href="../assets/images/icons-sprite.svg#header-icons"></use>
+            </svg>
+        </a>
+
+        <button class="header__burger-open" id="burger-menu-open">
+            <svg fill="none" class="header__burger-open_icon header__burger-open_icon-open">
+                <use href="../assets/images/icons-sprite.svg#burger-menu"></use>
+            </svg>
+        </button>
+
+        <div class="burger-menu" id="burger-menu">
+            <button id="burger-menu-close">
+                <svg fill="none" class="burger-menu__icon burger-menu__icon_close">
+                    <use href="../assets/images/icons-sprite.svg#burger-close"></use>
+                </svg>
+            </button>
+
+            <nav class="burger-menu__nav">
+                <div class="burger-menu__toggler">
+                    <label class="toggler toggler_default toggler__theme">
+                        <input type="checkbox" name="toggler" value="2" class="toggler__input"
+                               id="theme-changer-burger">
+
+                        <svg class="toggler_light" width="24px" height="24px">
+                            <use href="../assets/images/icons-sprite.svg#sun"></use>
+                        </svg>
+                        <div class="toggler__state">
+                            <div class="toggler__control">
+                                <div class="toggler__icon-inner"></div>
+                            </div>
+                        </div>
+                        <svg class="toggler_dark" fill="none" width="24px" height="24px">
+                            <use href="../assets/images/icons-sprite.svg#moon"></use>
+                        </svg>
+                    </label>
+                </div>
+                <h4 class="burger-menu__nav-title">Components</h4>
+                <div class="burger-menu__items">
+                    <a class="burger-menu__item" href="inner-page.html">Modal</a>
+                    <a class="burger-menu__item" href="tooltip.html">Tooltip</a>
+                    <a class="burger-menu__item" href="avatar.html">Avatar</a>
+                    <a class="burger-menu__item" href="calendar.html">Calendar</a>
+                    <a class="burger-menu__item burger-menu__item_active" href="#">Histogram</a>
+                    <a class="burger-menu__item" href="custom-form-elements.html">Custom Form Elements</a>
+                </div>
+                <a class="burger-menu__back" href="../index.html">Main Page</a>
+            </nav>
+
+        </div>
+
+        <div class="header__toggler">
+            <label class="toggler toggler_default toggler__theme">
+                <input type="checkbox" name="toggler" value="1" class="toggler__input" id="theme-changer">
+
+                <svg class="toggler_light" width="24px" height="24px">
+                    <use href="../assets/images/icons-sprite.svg#sun"></use>
+                </svg>
+                <div class="toggler__state">
+                    <div class="toggler__control">
+                        <div class="toggler__icon-inner"></div>
+                    </div>
+                </div>
+                <svg class="toggler_dark" fill="none" width="24px" height="24px">
+                    <use href="../assets/images/icons-sprite.svg#moon"></use>
+                </svg>
+            </label>
+
+        </div>
+
+    </header>
+
+    <main class="main__inner">
+
+        <div class="menu__inner">
+            <h4 class="menu__title">Components</h4>
+            <div class="menu__items">
+                <a class="menu__item" href=inner-page.html#">Modal</a>
+                <a class="menu__item" href="tooltip.html">Tooltip</a>
+                <a class="menu__item" href="avatar.html">Avatar</a>
+                <a class="menu__item" href="calendar.html">Calendar</a>
+                <a class="menu__item menu__item_active" href="#">Histogram</a>
+                <a class="menu__item" href="custom-form-elements.html">Custom Form Elements</a>
+            </div>
+            <div class="menu__back">
+                <a class="menu__item" href="../index.html">Main Page</a>
+            </div>
+        </div>
+
+        <div class="components">
+            <div class="components__top">
+                <h3 class="components__title">Histogram</h3>
+
+                <div class="histogram__card">
+                    <div class="histogram__header">
+                        <p class="histogram__title">Total Orders</p>
+                        <a class="histogram__link">View All</a>
+                    </div>
+                    <h4 class="histogram__total">50524</h4>
+                    <div class="histogram__chart">
+                        <div class="histogram__bar" style="height: 70%"></div>
+                        <div class="histogram__bar" style="height: 30%"></div>
+                        <div class="histogram__bar" style="height: 20%"></div>
+                        <div class="histogram__bar" style="height: 50%"></div>
+                        <div class="histogram__bar" style="height: 75%"></div>
+                        <div class="histogram__bar" style="height: 100%"></div>
+                        <div class="histogram__bar" style="height: 50%"></div>
+                        <div class="histogram__bar" style="height: 30%"></div>
+                        <div class="histogram__bar" style="height: 100%"></div>
+                        <div class="histogram__bar" style="height: 15%"></div>
+                        <div class="histogram__bar" style="height: 75%"></div>
+                        <div class="histogram__bar" style="height: 18%"></div>
+                        <div class="histogram__bar" style="height: 40%"></div>
+                        <div class="histogram__bar" style="height: 30%"></div>
+                        <div class="histogram__bar" style="height: 100%"></div>
+                        <div class="histogram__bar" style="height: 68%"></div>
+                        <div class="histogram__bar" style="height: 30%"></div>
+                        <div class="histogram__bar" style="height: 20%"></div>
+                        <div class="histogram__bar" style="height: 50%"></div>
+                        <div class="histogram__bar" style="height: 15%"></div>
+                        <div class="histogram__bar" style="height: 10%"></div>
+                        <div class="histogram__bar" style="height: 99%"></div>
+                    </div>
+                </div>
+
+            </div>
+            <nav class="tabs">
+                <input type="radio" id="html-tab" value="html" name="tab" class="tabs__input" checked>
+                <input type="radio" id="css-tab" value="css" name="tab" class="tabs__input">
+                <div class="tabs__scroller tabs__scroller_inner">
+                    <label for="html-tab" class="tabs__label">HTML</label>
+                    <label for="css-tab" class="tabs__label">CSS</label>
+                </div>
+
+                <div class="tabs__divider"></div>
+                <div class="components__bottom">
+
+                    <div class="tabs__content tabs__content_html">
+<pre><code class="language-html">&lt;div class=&quot;histogram__card&quot;&gt;
+    &lt;div class=&quot;histogram__header&quot;&gt;
+        &lt;p class=&quot;histogram__title&quot;&gt;Total Orders&lt;/p&gt;
+        &lt;a class=&quot;histogram__link&quot;&gt;View All&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;h4 class=&quot;histogram__total&quot;&gt;50524&lt;/h4&gt;
+    &lt;div class=&quot;histogram__chart&quot;&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 70%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 20%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 75%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 15%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 75%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 18%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 40%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 68%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 20%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 15%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 10%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 99%&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                    <div class="tabs__content tabs__content_css">
+<pre><code class="language-css">.histogram__card {
+    min-width: 354px;
+    padding: 16px 24px 24px;
+    background: var(--card-bg);
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+}
+
+.histogram__header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6px;
+    color: var(--text-secondary);
+}
+
+.histogram__title {
+    opacity: 0.8;
+    color: var(--font-color);
+    font: normal 400 16px/24px Inter, sans-serif;
+}
+
+.histogram__link {
+    padding-top: 3px;
+    color: var(--blue);
+    font: normal 400 16px/24px Inter, sans-serif;
+}
+
+.histogram__total {
+    text-align: left;
+    color: var(--text-primary);
+    font: normal 400 20px/26px Inter, sans-serif;
+}
+
+.histogram__chart {
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+    padding: 39px 4px 0 1px;
+    animation: rise 350ms linear;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+    transform-origin: bottom;
+}
+
+.histogram__bar {
+    flex-basis: 100%;
+    background: var(--blue);
+    margin-right: 1px;
+}
+
+@keyframes rise {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}</code></pre>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </main>
+
+    <footer class="footer__inner">
+        <h5 class="footer__inner-text">Reusable Component Library</h5>
+    </footer>
+</div>
+</body>
+</html>

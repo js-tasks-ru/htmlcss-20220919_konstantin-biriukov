@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Inner Page / Modal -->
+<!-- Tooltip -->
 <html lang="ru">
 <head>
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../09-lection7/01-burger-menu/burger-menu.css">
 
     <link rel="stylesheet" href="../03-lection1/01-button/button.css">
-    <link rel="stylesheet" href="../05-lection3/02-modal/modal.css">
+    <link rel="stylesheet" href="../05-lection3/01-tooltip/tooltip.css">
     <link rel="stylesheet" href="../07-lection5/02-radio/radio.css">
     <link rel="stylesheet" href="../07-lection5/03-toggler/toggler.css">
 
@@ -29,7 +29,7 @@
         }
     </style>
 
-    <title>Inner Page (Modal)</title>
+    <title>Tooltip</title>
 </head>
 <body>
 
@@ -76,8 +76,8 @@
                 </div>
                 <h4 class="burger-menu__nav-title">Components</h4>
                 <div class="burger-menu__items">
-                    <a class="burger-menu__item burger-menu__item_active" href="#">Modal</a>
-                    <a class="burger-menu__item" href="tooltip.html">Tooltip</a>
+                    <a class="burger-menu__item" href="inner-page.html">Modal</a>
+                    <a class="burger-menu__item burger-menu__item_active" href="#">Tooltip</a>
                     <a class="burger-menu__item" href="avatar.html">Avatar</a>
                     <a class="burger-menu__item" href="calendar.html">Calendar</a>
                     <a class="burger-menu__item" href="histogram.html">Histogram</a>
@@ -106,6 +106,7 @@
             </label>
 
         </div>
+
     </header>
 
     <main class="main__inner">
@@ -113,8 +114,8 @@
         <div class="menu__inner">
             <h4 class="menu__title">Components</h4>
             <div class="menu__items">
-                <a class="menu__item menu__item_active" href="#">Modal</a>
-                <a class="menu__item" href="tooltip.html">Tooltip</a>
+                <a class="menu__item" href="inner-page.html">Modal</a>
+                <a class="menu__item menu__item_active" href="#">Tooltip</a>
                 <a class="menu__item" href="avatar.html">Avatar</a>
                 <a class="menu__item" href="calendar.html">Calendar</a>
                 <a class="menu__item" href="histogram.html">Histogram</a>
@@ -127,24 +128,17 @@
 
         <div class="components">
             <div class="components__top">
-                <h3 class="components__title">Modal</h3>
-                <div>
-                    <div id="modal" class="modal">
-                        <main class="modal__window">
-                            <svg id="modal-close" class="modal__close">
-                                <use href="../assets/images/icons-sprite.svg#modal"></use>
-                            </svg>
-                            <h3 class="modal__title">Modal title</h3>
-                            <p class="modal__text">
-                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                                Velit officia consequat duis
-                                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                            </p>
-                        </main>
-                    </div>
-                    <button id="modal-open" class="button button_primary">Open Modal</button>
+                <h3 class="components__title">Tooltip</h3>
 
+                <div>
+                    <div class="tooltip" style="margin: 25px 0 0 40px">
+                        <svg class="tooltip__trigger">
+                            <use href="../assets/images/icons-sprite.svg#tooltip"></use>
+                        </svg>
+                        <div class="tooltip__helper">Helper Text</div>
+                    </div>
                 </div>
+
             </div>
             <nav class="tabs">
                 <input type="radio" id="html-tab" value="html" name="tab" class="tabs__input" checked>
@@ -153,81 +147,61 @@
                     <label for="html-tab" class="tabs__label">HTML</label>
                     <label for="css-tab" class="tabs__label">CSS</label>
                 </div>
-                <div class="tabs__divider"></div>
 
+                <div class="tabs__divider"></div>
                 <div class="components__bottom">
 
                     <div class="tabs__content tabs__content_html">
-<pre><code class="language-html">&lt;div id=&quot;modal&quot; class=&quot;modal&quot;&gt;
-    &lt;main class=&quot;modal__window&quot;&gt;
-        &lt;svg id=&quot;modal-close&quot; class=&quot;modal__close&quot;&gt;
-            &lt;use href=&quot;../../assets/images/icons-sprite.svg#modal&quot;&gt;&lt;/use&gt;
-        &lt;/svg&gt;
-        &lt;h3 class=&quot;modal__title&quot;&gt;Modal title&lt;/h3&gt;
-        &lt;p class=&quot;modal__text&quot;&gt;
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-            Velit officia consequat duis
-            enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-        &lt;/p&gt;
-    &lt;/main&gt;
-&lt;/div&gt;
-&lt;button id=&quot;modal-open&quot; class=&quot;button button_primary&quot;&gt;Open Modal&lt;/button&gt;</code></pre>
+                        <pre><code class="language-html">&lt;div class=&quot;tooltip&quot;&gt;
+    &lt;svg class=&quot;tooltip__trigger&quot;&gt;
+        &lt;use href=&quot;../../assets/images/icons-sprite.svg#tooltip&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+    &lt;div class=&quot;tooltip__helper&quot;&gt;Helper Text&lt;/div&gt;
+&lt;/div&gt;</code></pre>
                     </div>
                     <div class="tabs__content tabs__content_css">
-                        <pre><code class="language-css">.modal {
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(196, 196, 196, 0.5);
-}
-
-.modal__window {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px 40px 33px 40px;
-
-    border-radius: 8px;
-    font: 400 normal 16px/24px Inter, sans-serif;
-    background: var(--white-bg);
-    color: var(--input-text-color);
-}
-
-.modal__close {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    width: 20px;
-    height: 20px;
-    color: var(--input-text-color);
-    cursor: pointer;
-}
-
-.modal__title {
-    padding-bottom: 14px;
-    color: var(--font-color);
-    font: 600 normal 20px/24px Inter, sans-serif;
-}
-
-.modal_preview {
-    display: block;
+                        <pre><code class="language-css">.tooltip {
+    display: inline-flex;
     position: relative;
     margin: auto;
-    width: 80%;
-    height: 70%;
 }
 
-.modal_preview .modal__window {
-    padding: 15px;
-    width: 70%;
-    height: 70%;
+.tooltip__trigger {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    color: var(--primary);
 }
 
-.modal_preview .modal__text {
-    font-size: 10px;
-    line-height: 1rem;
+.tooltip__helper {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 7px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 13px 21px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+    background: var(--blue);
+
+    font: normal 400 16px/24px Inter, sans-serif;
+    color: var(--grey-2);
+    white-space: nowrap;
+}
+
+.tooltip__helper:before {
+    content: &quot;&quot;;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-top: 6px solid var(--blue);
+}
+
+.tooltip__trigger:hover ~ .tooltip__helper {
+    display: block;
 }</code></pre>
                     </div>
                 </div>
@@ -240,6 +214,4 @@
     </footer>
 </div>
 </body>
-<script src="../05-lection3/02-modal/index.js"></script>
-
 </html>

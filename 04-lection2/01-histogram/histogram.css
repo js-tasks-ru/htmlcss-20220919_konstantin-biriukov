@@ -1,4 +1,5 @@
 .histogram__card {
+    min-width: 354px;
     padding: 16px 24px 24px;
     background: var(--card-bg);
     border: 1px solid var(--grey-3);
@@ -45,6 +46,13 @@
     flex-basis: 100%;
     background: var(--blue);
     margin-right: 1px;
+}
+
+.histogram_preview {
+    min-width: 100px;
+    width: 70%;
+    height: 40%;
+    margin: auto;
 }
 
 @keyframes rise {

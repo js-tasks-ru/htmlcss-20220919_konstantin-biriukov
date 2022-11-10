@@ -7,10 +7,9 @@
     padding: 15px 56px;
     border-radius: 8px;
 
-    font: 16px/18.75 Roboto, sans-serif;
-    font-weight: 500;
+    font: 500 normal 16px/19px Roboto, sans-serif;
     cursor: pointer;
-    color: var(--font-color);
+    color: var(--white);
 }
 
 .button_primary {
@@ -26,6 +25,7 @@
 .button_alternate {
     border: 1px solid var(--grey-3);
     color: var(--input-text-color);
+    background: transparent;
 }
 
 /* button's hover and disabled states */
