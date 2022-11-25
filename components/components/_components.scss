@@ -1,4 +1,5 @@
 @use "../../assets/css/variables";
+@use "../../assets/css/mixins";
 
 .components {
   min-width: 650px;
@@ -7,7 +8,7 @@
   border-radius: 12px;
   background: variables.$card-bg;
 
-  @media screen and (max-width: 768px) {
+  @include mixins.device(mixins.$md) {
     margin: 0;
     min-width: 0;
     border-radius: 0;

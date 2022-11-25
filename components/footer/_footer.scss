@@ -30,7 +30,7 @@
     background: variables.$grey-bg;
   }
 
-  .&__inner-text {
+  &__inner-text {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: variables.$text-secondary;
@@ -38,7 +38,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@include mixins.device(mixins.$md) {
   .footer, .footer__inner {
     display: none;
   }

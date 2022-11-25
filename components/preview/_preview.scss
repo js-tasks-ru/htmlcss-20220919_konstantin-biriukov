@@ -1,4 +1,5 @@
 @use "../../assets/css/variables";
+@use "../../assets/css/mixins";
 
 .preview {
   background: variables.$grey-bg;
@@ -57,7 +58,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@include mixins.device(mixins.$md) {
   .preview {
     min-width: 360px;
 

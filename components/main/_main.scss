@@ -1,16 +1,17 @@
 @use "../../assets/css/variables";
+@use "../../assets/css/mixins";
 
 .main__inner {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto 1fr;
-    background: variables.$grey-bg;
-    padding: 36px 165px 0 165px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto 1fr;
+  background: variables.$grey-bg;
+  padding: 36px 165px 0 165px;
 }
 
-@media screen and (max-width: 1280px) {
-    .main__inner {
-        display: inline-block;
-        padding: 0 16px;
-    }
+@include mixins.device(mixins.$xl) {
+  .main__inner {
+    display: inline-block;
+    padding: 0 16px;
+  }
 }

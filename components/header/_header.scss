@@ -73,7 +73,7 @@
 
     &_icon {
       display: none;
-      @include square(24px);
+      @include mixins.square(24px);
       position: absolute;
       top: 20px;
       left: 16px;
@@ -87,7 +87,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@include mixins.device(mixins.$md) {
   .header {
     padding: 17px 0 69px 16px;
 
@@ -118,7 +118,7 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@include mixins.device(mixins.$xl) {
   .header__inner {
     padding: 17px 0 17px 0;
     justify-content: end;

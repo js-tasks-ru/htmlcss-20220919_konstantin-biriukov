@@ -1,14 +1,16 @@
+@use "../../assets/css/mixins";
+
 .form__inputs {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;
-    align-items: start;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
 }
 
-@media screen and (max-width: 1400px) {
-    .form__inputs {
-        display: flex;
-        flex-direction: column;
-    }
+@include mixins.device(mixins.$xxl) {
+  .form__inputs {
+    display: flex;
+    flex-direction: column;
+  }
 }

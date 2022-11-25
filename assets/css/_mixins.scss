@@ -15,3 +15,14 @@
   outline: none;
   clip: rect(0, 0, 0, 0);
 }
+
+$sm: 576px;
+$md: 768px;
+$xl: 1280px;
+$xxl: 1400px;
+
+@mixin device($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content
+  }
+}

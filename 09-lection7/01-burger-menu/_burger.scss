@@ -26,8 +26,7 @@
   }
 }
 
-
-@media screen and (max-width: 768px) {
+@include mixins.device(mixins.$md) {
   .burger {
     padding: 17px 0 17px 0;
     justify-content: center;
