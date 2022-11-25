@@ -14,7 +14,7 @@
     "number-no-trailing-zeros": true,
     "selector-list-comma-space-before": "never",
     "selector-list-comma-newline-after": "always",
-    "string-quotes": "single",
+    "string-quotes": "double",
     "value-no-vendor-prefix": null,
     "declaration-empty-line-before": "never"
   }
