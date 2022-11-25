@@ -1,0 +1,68 @@
+@use "../../assets/css/variables";
+
+.skeleton {
+  box-sizing: border-box;
+  padding: 24px 40px 32px 24px;
+  border: 1px solid variables.$grey-3;
+  border-radius: 8px;
+  background: variables.$card-bg;
+
+  &__top {
+    display: flex;
+
+    .skeleton__lines {
+      margin-left: 16px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    margin-top: 16px;
+  }
+
+  &__lines {
+    flex-basis: 100%;
+  }
+
+  &__circle {
+    width: 64px;
+    border-radius: 50%;
+    background: variables.$grey-2;
+  }
+
+  &__line {
+    margin-top: 8px;
+    height: 20px;
+
+    &_small {
+      width: 33%;
+    }
+
+    &_medium {
+      width: 66%;
+    }
+
+    &_large {
+      width: 100%;
+    }
+  }
+
+  &__circle,
+  &__line {
+    background: linear-gradient(92.51deg, variables.$grey-2 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, variables.$grey-2 102.52%);
+    background-size: 200%;
+    animation: gradient 1.2s linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position-x: 200%;
+  }
+
+  100% {
+    background-position-x: 0;
+  }
+}

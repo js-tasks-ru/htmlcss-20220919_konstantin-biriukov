@@ -1,0 +1,94 @@
+@use "../../assets/css/variables";
+
+.preview {
+  background: variables.$grey-bg;
+  min-width: 1500px;
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1110px;
+    margin: 0 auto;
+
+    &_flex {
+      display: flex;
+    }
+  }
+
+  &__header-text {
+    color: variables.$text-secondary;
+    font: 500 normal 32px/42px Inter, sans-serif;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+  }
+
+  &__calendar {
+    width: 30%;
+  }
+
+  /* preview__buttons */
+  &__section {
+    margin-top: 64px;
+  }
+
+  &__buttons_grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    gap: 16px 32px;
+  }
+
+  &__buttons-row-header {
+    place-self: center;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font: 500 normal 14px/16px Inter, sans-serif;
+    color: variables.$active-text-color;
+  }
+
+  &__buttons-row-header_disabled {
+    color: variables.$grey-3;
+  }
+
+  &__skeleton {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .preview {
+    min-width: 360px;
+
+    &__calendar {
+      width: 100%;
+
+      &_wrapper {
+        align-self: start;
+      }
+    }
+
+    &__cards_flex {
+      flex-direction: column;
+    }
+
+    &__buttons_grid {
+      grid-template-columns: repeat(2, auto);
+      grid-auto-flow: row;
+      gap: 8px 16px;
+    }
+
+    &__section {
+      padding: 0 15px;
+    }
+
+    &__header-text {
+      font: 500 normal 26px/30px Inter, sans-serif;
+    }
+
+    &__skeleton {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@use "../../assets/css/variables";
+@use "../../assets/css/mixins";
+
+.checkbox {
+  position: relative;
+  display: inline-block;
+
+  &__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: none;
+    height: 13px;
+    width: 15px;
+    color: variables.$main-bg;
+
+    &-animation {
+      display: none;
+      position: absolute;
+      @include mixins.square(28px);
+      border-radius: 8px;
+      background: variables.$grey-2;
+      z-index: -1;
+
+      animation: check 400ms linear;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &__control {
+    box-sizing: border-box;
+    @include mixins.square(28px);
+    @include mixins.flexCenterXY();
+
+    background: variables.$grey-bg;
+    border: 1px solid variables.$grey-2;
+    border-radius: 4px;
+  }
+
+  &__title {
+    font: normal 400 16px/24px Inter, sans-serif;
+    color: var(--text-primary);
+  }
+
+  &__input {
+    @include mixins.hideNativeControl;
+
+    /* checked */
+    &:checked ~ .checkbox__state .checkbox__control {
+      background: variables.$blue;
+      border-color: variables.$blue;
+    }
+
+    &:checked ~ .checkbox__state .checkbox__icon,
+    &:checked ~ .checkbox__state .checkbox__icon-animation {
+      display: block;
+    }
+
+    /* disabled */
+    &:disabled ~ .checkbox__state {
+      cursor: not-allowed;
+
+      .checkbox__control {
+        background: variables.$grey-2;
+      }
+
+      .checkbox__title {
+        color: variables.$grey-2;
+        font: normal 400 16px/24px Inter, sans-serif;
+      }
+    }
+
+    /* focus */
+    &:focus ~ .checkbox__state .checkbox__title {
+      border-bottom: 1px solid variables.$black;
+    }
+  }
+}
+
+@keyframes check {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}

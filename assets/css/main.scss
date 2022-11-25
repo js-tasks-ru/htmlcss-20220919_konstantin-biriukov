@@ -1,0 +1,36 @@
+@use "../fonts/fonts.css";
+@use "./variables.scss";
+@use "../../components/page/page.css";
+@use "../../components/inner-page/inner-page.css";
+@use "../../components/components/components.scss";
+@use "../../components/nav/nav.scss";
+@use "../../components/header/header.scss";
+@use "../../components/container/container.css";
+@use "../../components/preview/preview.scss";
+@use "../../components/main/main.scss";
+@use "../../components/menu/menu.scss";
+@use "../../components/preview/card.scss";
+@use "../../components/footer/footer.scss";
+@use "../../components/tabs/tabs.scss";
+@use "../../components/language/language.scss";
+
+@use "../../03-lection1/01-button/button.scss";
+@use "../../03-lection1/02-accordion/accordion.scss";
+
+@use "../../04-lection2/01-histogram/histogram.scss";
+@use "../../04-lection2/02-skeleton/skeleton.scss";
+
+@use "../../05-lection3/01-tooltip/tooltip.scss";
+@use "../../05-lection3/02-modal/modal.scss";
+@use "../../05-lection3/03-calendar/calendar.scss";
+
+@use "../../06-lection4/01-avatar/avatar.scss";
+
+@use "../../07-lection5/01-checkbox/checkbox.scss";
+@use "../../07-lection5/02-radio/radio.scss";
+@use "../../07-lection5/03-toggler/toggler.scss";
+@use "../../07-lection5/04-input/form-inputs.scss";
+@use "../../07-lection5/04-input/input.scss";
+
+@use "../../09-lection7/01-burger-menu/burger.scss";
+@use "../../09-lection7/01-burger-menu/burger-menu.scss";

@@ -1,0 +1,54 @@
+@use "../../assets/css/variables";
+
+/* Стилизация кнопки */
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  padding: 15px 56px;
+  border-radius: 8px;
+
+  font: 500 normal 16px/19px Roboto, sans-serif;
+  cursor: pointer;
+  color: white;
+
+  &_primary {
+    background-color: variables.$primary;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+
+    &:hover:not(:disabled) {
+      background-color: variables.$blue-dark;
+    }
+  }
+
+  &_secondary {
+    background-color: variables.$secondary;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+
+    &:hover:not(:disabled) {
+      background-color: variables.$purple-dark;
+    }
+  }
+
+  &_alternate {
+    border: 1px solid variables.$grey-3;
+    color: variables.$input-text-color;
+    background: transparent;
+
+    &:hover:not(:disabled) {
+      border-color: variables.$text-primary;
+    }
+  }
+
+  /* button's hover and disabled states */
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(3px);
+    transition: transform 200ms linear;
+  }
+}

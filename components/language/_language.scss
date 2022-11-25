@@ -1,0 +1,5 @@
+@use "../../assets/css/variables";
+
+.language-html, .language-css {
+  background: variables.$card-bg;
+}

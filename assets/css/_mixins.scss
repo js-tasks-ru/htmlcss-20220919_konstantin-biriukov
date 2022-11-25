@@ -1,0 +1,17 @@
+@mixin square($size: 24px) {
+  width: $size;
+  height: $size;
+}
+
+@mixin flexCenterXY() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin hideNativeControl() {
+  position: absolute;
+  appearance: none;
+  outline: none;
+  clip: rect(0, 0, 0, 0);
+}

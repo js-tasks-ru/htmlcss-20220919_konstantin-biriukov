@@ -1,8 +1,10 @@
+@use "../../assets/css/variables";
+
 .main__inner {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto 1fr;
-    background: var(--grey-bg);
+    background: variables.$grey-bg;
     padding: 36px 165px 0 165px;
 }
 
