@@ -4,7 +4,7 @@
   "description": "Course Materials",
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
-    "build": "postcss assets/css/main.scss -o dist/styles.css",
+    "build": "postcss assets/css/main.css -o dist/styles.css",
     "linter-check": "npx stylelint \"**/*.css\"",
     "linter-fix": "npx stylelint \"**/*.css\" --fix",
     "prettier": "npx prettier --write ."
