@@ -1,56 +1,56 @@
+@use "../../assets/css/variables";
+@use "../../assets/css/mixins";
+
 .tabs {
-    position: relative;
-}
+  position: relative;
 
-.tabs__input {
-    position: absolute;
-    appearance: none;
-    outline: none;
-    clip: rect(0, 0, 0, 0);
-}
+  &__input {
+    @include mixins.hideNativeControl;
+  }
 
-.tabs__menu {
-    background: var(--main-bg);
-}
+  &__menu {
+    background: variables.$main-bg;
+  }
 
-.tabs__scroller {
+  &__scroller {
     display: flex;
     gap: 40px;
     white-space: nowrap;
     max-width: 1110px;
     margin: 0 auto;
-}
 
-.tabs__scroller_inner {
-    padding: 0 106px 0 42px;
-    margin: 0;
-    max-width: 0;
-}
+    &_inner {
+      padding: 0 106px 0 42px;
+      margin: 0;
+      max-width: 0;
+    }
+  }
 
-.tabs__divider {
+  &__divider {
     height: 1px;
     width: 100%;
-    background-color: var(--grey-2);
+    background-color: variables.$grey-2;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-}
+  }
 
-.tabs__label {
+  &__label {
     font: normal 400 16px/24px Inter, sans-serif;
-    color: var(--text-secondary);
+    color: variables.$text-secondary;
     padding-bottom: 8px;
     cursor: pointer;
-}
+  }
 
-.tabs__content {
+  &__content {
     overflow-x: auto;
+  }
 }
 
 .tabs__input[id="all-tab"]:checked ~ .tabs__menu .tabs__scroller .tabs__label[for="all-tab"],
 .tabs__input[id="atoms-tab"]:checked ~ .tabs__menu .tabs__scroller .tabs__label[for="atoms-tab"],
-.tabs__input[id="molecules-tab"]:checked ~  .tabs__menu .tabs__scroller .tabs__label[for="molecules-tab"],
-.tabs__input[id="organisms-tab"]:checked ~  .tabs__menu .tabs__scroller .tabs__label[for="organisms-tab"],
+.tabs__input[id="molecules-tab"]:checked ~ .tabs__menu .tabs__scroller .tabs__label[for="molecules-tab"],
+.tabs__input[id="organisms-tab"]:checked ~ .tabs__menu .tabs__scroller .tabs__label[for="organisms-tab"],
 .tabs__input[id="html-tab"]:checked ~ .tabs__scroller .tabs__label[for="html-tab"],
 .tabs__input[id="css-tab"]:checked ~ .tabs__scroller .tabs__label[for="css-tab"],
 .tabs__input[id="all-tab"]:hover ~ .tabs__menu .tabs__scroller .tabs__label[for="all-tab"],
@@ -58,17 +58,16 @@
 .tabs__input[id="molecules-tab"]:hover ~ .tabs__menu .tabs__scroller .tabs__label[for="molecules-tab"],
 .tabs__input[id="organisms-tab"]:hover ~ .tabs__menu .tabs__scroller .tabs__label[for="organisms-tab"],
 .tabs__input[id="html-tab"]:hover ~ .tabs__menu .tabs__scroller .tabs__label[for="html-tab"],
-.tabs__input[id="css-tab"]:hover ~ .tabs__menu .tabs__scroller .tabs__label[for="css-tab"]
-{
-    color: var(--text-primary);
-    border-bottom: 5px solid var(--text-primary);
+.tabs__input[id="css-tab"]:hover ~ .tabs__menu .tabs__scroller .tabs__label[for="css-tab"] {
+  color: variables.$text-primary;
+  border-bottom: 5px solid variables.$text-primary;
 }
 
 .tabs__content_atoms,
 .tabs__content_molecules,
 .tabs__content_organisms,
 .tabs__content_css {
-    display: none;
+  display: none;
 }
 
 .tabs__input[id="all-tab"]:checked ~ .tabs__content,
@@ -77,45 +76,45 @@
 .tabs__input[id="organisms-tab"]:checked ~ .tabs__content,
 .tabs__input[id="html-tab"]:checked ~ .tabs__divider + div .tabs__content,
 .tabs__input[id="css-tab"]:checked ~ .tabs__divider + div .tabs__content {
-    display: none;
+  display: none;
 }
 
 .tabs__input[id="all-tab"]:checked ~ .tabs__content_all {
-    display: flex;
+  display: flex;
 }
 
 .tabs__input[id="atoms-tab"]:checked ~ .tabs__content_atoms,
 .tabs__input[id="molecules-tab"]:checked ~ .tabs__content_molecules,
 .tabs__input[id="organisms-tab"]:checked ~ .tabs__content_organisms {
-    display: flex;
-    flex-direction: column;
-    overflow-x: visible;
+  display: flex;
+  flex-direction: column;
+  overflow-x: visible;
 
-    flex-wrap: wrap;
-    max-width: 1110px;
-    margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 .tabs__input[id="html-tab"]:checked ~ .tabs__divider + div .tabs__content_html,
 .tabs__input[id="css-tab"]:checked ~ .tabs__divider + div .tabs__content_css {
-    display: flex;
+  display: flex;
 }
 
-@media screen and (max-width: 768px) {
-    .tabs__label {
-        font: normal 400 12px/18px Inter, sans-serif;
-    }
+@include mixins.device(mixins.$md) {
+  .tabs__label {
+    font: normal 400 12px/18px Inter, sans-serif;
+  }
 
-    .tabs__scroller {
-        gap: 14px;
-        padding: 0 106px 0 42px;
-    }
+  .tabs__scroller {
+    gap: 14px;
+    padding: 0 106px 0 42px;
+  }
 }
 
-@media screen and (max-width: 576px) {
-    .tabs__input[id="atoms-tab"]:checked ~ .tabs__content_atoms,
-    .tabs__input[id="molecules-tab"]:checked ~ .tabs__content_molecules,
-    .tabs__input[id="organisms-tab"]:checked ~ .tabs__content_organisms {
-        overflow-x: auto;
-    }
+@include mixins.device(mixins.$sm) {
+  .tabs__input[id="atoms-tab"]:checked ~ .tabs__content_atoms,
+  .tabs__input[id="molecules-tab"]:checked ~ .tabs__content_molecules,
+  .tabs__input[id="organisms-tab"]:checked ~ .tabs__content_organisms {
+    overflow-x: auto;
+  }
 }

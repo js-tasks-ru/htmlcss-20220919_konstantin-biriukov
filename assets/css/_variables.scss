@@ -1,0 +1,111 @@
+$white: var(--white);
+$white-2: var(--white-2);
+$black: var(--black);
+$black-dark: var(--black-dark);
+$pink: var(--pink);
+$purple: var(--purple);
+$purple-dark: var(--purple-dark);
+$blue: var(--blue);
+$blue-dark: var(--blue-dark);
+$blue-2: var(--blue-2);
+$red: var(--red);
+$orange: var(--orange);
+$grey-0: var(--grey-0);
+$grey-1: var(--grey-1);
+$grey-2: var(--grey-2);
+$grey-3: var(--grey-3);
+$grey-4: var(--grey-4);
+
+$error: var(--error);
+$success: var(--success);
+
+$primary: var(--primary);
+$secondary: var(--secondary);
+
+$main-bg: var(--main-bg);
+$text-primary: var(--text-primary);
+$dark-bg: var(--dark-bg);
+$white-bg: var(--white-bg);
+$light-bg: var(--light-bg);
+$grey-bg: var(--grey-bg);
+$card-bg: var(--card-bg);
+
+$font-color: var(--font-color);
+$active-text-color: var(--active-text-color);
+$input-text-color: var(--input-text-color);
+$text-secondary: var(--text-secondary);
+
+html[data-theme-dark] {
+  --main-bg: var(--black);
+  --font-color: #ffffff75;
+  --dark-bg: var(--grey-1);
+  --white-bg: var(--black);
+  --light-bg: var(--grey-4);
+  --grey-bg: var(--grey-4);
+  --card-bg: var(--black);
+  --text-primary: var(--white);
+  --active-text-color: var(--grey-2);
+  --input-text-color: var(--font-color);
+}
+
+:root {
+  --white: #ffffff;
+  --white-2: #F9FAFC;
+  --black: #212429;
+  --black-dark: #000000;
+  --pink: #F784AD;
+  --purple: #7048E8;
+  --purple-dark: #5028C6;
+  --blue: #4263EB;
+  --blue-dark: #2342C0;
+  --blue-2: #334D6E;
+  --red: #F03D3E;
+  --orange: #D84910;
+  --grey-0: #E5E5E5;
+  --grey-1: #F8F9FA;
+  --grey-2: #DDE2E5;
+  --grey-3: #ACB5BD;
+  --grey-4: #495057;
+
+  --error: var(--red);
+  --success: var(--blue);
+
+  --primary: var(--blue);
+  --secondary: var(--purple);
+
+  --main-bg: var(--white);
+  --text-primary: var(--black);
+  --dark-bg: var(--black);
+  --white-bg: var(--white);
+  --light-bg: var(--white);
+  --grey-bg: var(--grey-1);
+  --card-bg: var(--white);
+
+  --font-color: var(--text-primary);
+  --active-text-color: var(--text-primary);
+  --input-text-color: var(--grey-4);
+  --text-secondary: var(--grey-3);
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background: var(--main-bg);
+}
+
+/*
+    NAME : LIGHT | DARK
+    --main-bg: white | black;
+    --font-color: black | #ffffff75;
+    --dark-bg: black | grey-1;
+    --white-bg: white | black;
+    --light-bg: white | grey-4;
+    --grey-bg: grey-1 | grey-4;
+    --card-bg: white | black;
+    --text-primary: black | white;
+    --active-text-color: black | grey-2;
+    --input-text-color: grey-4 | #ffffff75;
+*/

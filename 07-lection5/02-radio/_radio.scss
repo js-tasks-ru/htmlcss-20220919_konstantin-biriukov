@@ -1,0 +1,71 @@
+@use "../../assets/css/variables";
+@use "../../assets/css/mixins";
+
+/* radio element*/
+.radio {
+  display: inline-block;
+  position: relative;
+
+  &__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  &__control {
+    box-sizing: border-box;
+    @include mixins.flexCenterXY();
+    @include mixins.square(28px);
+
+    background: variables.$grey-bg;
+    border: 1px solid variables.$grey-2;
+    border-radius: 50%;
+  }
+
+  &__icon-inner {
+    @include mixins.square(18px);
+    display: none;
+    border-radius: 50%;
+    background: variables.$blue;
+    border: 3px solid variables.$grey-bg;
+  }
+
+  &__title {
+    color: variables.$text-primary;
+    font: normal 400 16px/24px Inter, sans-serif;
+  }
+
+  &__input {
+    @include mixins.hideNativeControl();
+
+    /* checked */
+    &:checked ~ .radio__state .radio__control {
+      background: variables.$blue;
+      border-color: variables.$blue;
+    }
+
+    &:checked ~ .radio__state .radio__icon-inner {
+      display: block;
+    }
+
+    /* disabled */
+    &:disabled ~ .radio__state {
+      cursor: not-allowed;
+    }
+
+    &:disabled ~ .radio__state .radio__control {
+      background: variables.$grey-2;
+    }
+
+    &:disabled ~ .radio__state .radio__title {
+      color: variables.$grey-2;
+      font: normal 400 16px/24px Inter, sans-serif;
+    }
+
+    /* focus */
+    &:focus ~ .radio__state .radio__title {
+      border-bottom: 1px solid variables.$font-color;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@use "../../assets/css/variables";
+
+/* Стилизация аккордеона */
+
+.accordion {
+  &__item {
+    margin-bottom: 8px;
+    padding: 24px 32px;
+    background: variables.$card-bg;
+    border: 1px solid variables.$grey-3;
+    border-radius: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &[open] {
+      .accordion__item {
+        padding-bottom: 32px;
+      }
+
+      .accordion__summary {
+        animation: slide-down 250ms linear forwards;
+      }
+
+      .accordion__icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    color: variables.$font-color;
+    font: normal 400 16px/24px Inter, sans-serif;
+
+    animation: slide-up 250ms linear forwards;
+
+    /* для Safari, Webkit, Google Chrome*/
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &__panel {
+    margin: 0;
+    color: variables.$input-text-color;
+    font: normal 400 16px/24px Inter, sans-serif;
+  }
+
+  &__icon {
+    height: 10px;
+    width: 20px;
+    color: variables.$card-bg;
+  }
+}
+
+
+@keyframes slide-down {
+  0% {
+    padding-bottom: 0;
+  }
+
+  100% {
+    padding-bottom: 16px;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    padding-bottom: 16px;
+  }
+
+  100% {
+    padding-bottom: 0;
+  }
+}
+

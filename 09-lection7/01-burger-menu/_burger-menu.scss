@@ -1,0 +1,110 @@
+@use "../../assets/css/variables";
+@use "../../assets/css/mixins";
+
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 375px;
+  background: variables.$card-bg;
+  transform: translateX(-100vw);
+  transition: transform 250ms linear;
+  z-index: 2;
+
+  &[data-open] {
+    transform: translateX(0);
+  }
+
+  &__icon {
+    display: none;
+    @include mixins.square(24px);
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    cursor: pointer;
+
+    &_close {
+      display: inline-block;
+      background: variables.$grey-2;
+      border-radius: 50%;
+    }
+  }
+
+  /* burger nav */
+  &__nav {
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 64px;
+    height: 100vh;
+    min-width: 375px;
+    padding: 24px 16px 16px;
+    background: variables.$card-bg;
+  }
+
+  &__nav-title {
+    margin: 16px 0;
+    font: normal 400 20px/26px Inter, sans-serif;
+    color: variables.$font-color;
+  }
+
+  &__items {
+    display: grid;
+    gap: 4px;
+    font: normal 400 14px/22px Inter, sans-serif;
+  }
+
+  &__item {
+    text-decoration: none;
+    color: variables.$font-color;
+
+    &_active {
+      color: variables.$orange;
+    }
+  }
+
+  &__back {
+    margin-top: 30px;
+    font: normal 400 14px/22px Inter, sans-serif;
+    color: variables.$font-color;
+    text-decoration: none;
+  }
+
+  &__item:hover,
+  &__back:hover {
+    cursor: pointer;
+    color: variables.$orange;
+  }
+
+  &__toggler {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    padding: 14px 0;
+    border-bottom: 1px solid variables.$grey-2;
+    border-top: 1px solid variables.$grey-2;
+    font: normal 400 16px/24px Inter, sans-serif;
+    color: variables.$text-secondary;
+  }
+}
+
+@include mixins.device(mixins.$md) {
+  .burger-menu {
+    &__icon {
+      display: inline-block;
+    }
+
+    &__items {
+      gap: 16px;
+      font: normal 400 16px/24px Inter, sans-serif;
+    }
+
+    &__back {
+      font: normal 400 16px/24px Inter, sans-serif;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@use "../../assets/css/variables";
+@use "../../assets/css/mixins";
+
+.burger {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 165px 77px 160px;
+
+  &__icons {
+    width: 110px;
+    height: 32px;
+    z-index: 1;
+  }
+
+  &__icon {
+    display: none;
+    @include mixins.square(24px);
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    cursor: pointer;
+
+    &_open {
+      display: inline-block;
+    }
+  }
+}
+
+@include mixins.device(mixins.$md) {
+  .burger {
+    padding: 17px 0 17px 0;
+    justify-content: center;
+    background: variables.$white-2;
+
+    &__icons {
+      justify-content: center;
+    }
+
+    &__icon {
+      display: inline-block;
+    }
+  }
+}

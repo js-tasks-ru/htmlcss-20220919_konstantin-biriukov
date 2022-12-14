@@ -1,0 +1,58 @@
+@use "../../assets/css/variables";
+@use "../../assets/css/mixins";
+
+.menu {
+  &__inner {
+    width: 229px;
+  }
+
+  &__title {
+    margin: 0 0 16px;
+    font: normal 400 20px/26px Inter, sans-serif;
+    color: variables.$font-color;
+  }
+
+  &__items {
+    display: grid;
+    gap: 4px;
+    font: normal 400 14px/22px Inter, sans-serif;
+  }
+
+  &__item {
+    text-decoration: none;
+    color: variables.$font-color;
+
+    &_active {
+      color: variables.$orange;
+    }
+  }
+
+  &__back {
+    margin-top: 30px;
+    font: normal 400 14px/22px Inter, sans-serif;
+    color: variables.$black;
+  }
+
+  &__item:hover,
+  &__back:hover {
+    cursor: pointer;
+    color: variables.$orange;
+  }
+}
+
+@include mixins.device(mixins.$xl) {
+  .menu {
+    &__inner {
+      display: none;
+    }
+
+    &__items {
+      gap: 16px;
+      font: normal 400 16px/24px Inter, sans-serif;
+    }
+
+    &__back {
+      font: normal 400 16px/24px Inter, sans-serif;
+    }
+  }
+}

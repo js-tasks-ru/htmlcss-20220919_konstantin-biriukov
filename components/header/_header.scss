@@ -1,0 +1,156 @@
+@use "../../assets/css/variables";
+@use "../../assets/css/mixins";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 165px 0 160px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__burger {
+    display: none;
+    @include mixins.square(24px);
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    cursor: pointer;
+  }
+
+  &__title {
+    display: flex;
+    max-width: 1110px;
+    width: 100%;
+    margin: 40px auto;
+
+    font: normal 500 50px/64px "Inter", sans-serif;
+    color: variables.$font-color;
+  }
+
+  &__icons {
+    height: 32px;
+    color: variables.$black;
+
+    &_grey {
+      color: variables.$dark-bg;
+    }
+  }
+
+  &__link {
+    z-index: 3;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 165px 26px 160px;
+    background: variables.$grey-bg;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 165px 0 160px;
+  }
+
+  &__toggler {
+    display: flex;
+    align-self: flex-end;
+    gap: 24px;
+    font: normal 400 16px/24px Inter, sans-serif;
+    color: variables.$text-secondary;
+  }
+
+  /* header burger icon */
+  &__burger-open {
+    display: none;
+
+    &_icon {
+      display: none;
+      @include mixins.square(24px);
+      position: absolute;
+      top: 20px;
+      left: 16px;
+      cursor: pointer;
+      color: variables.$grey-3;
+    }
+
+    &_icon-open {
+      display: inline-block;
+    }
+  }
+}
+
+@include mixins.device(mixins.$md) {
+  .header {
+    padding: 17px 0 69px 16px;
+
+    &__title {
+      font: 400 normal 28px/38px Inter, sans-serif;
+      color: variables.$grey-4;
+      justify-content: center;
+    }
+
+    &__main {
+      padding: 17px 0 0;
+      justify-content: end;
+    }
+
+    &__link {
+      margin-right: 30px;
+    }
+
+    &__menu, .header__toggler {
+      display: none;
+    }
+
+    &__burger,
+    &__burger-open,
+    &__burger-open_icon {
+      display: inline-block;
+    }
+  }
+}
+
+@include mixins.device(mixins.$xl) {
+  .header__inner {
+    padding: 17px 0 17px 0;
+    justify-content: end;
+
+    .header {
+      padding: 17px 0 69px 16px;
+    }
+
+    .header__title {
+      font: 400 normal 28px/38px Inter, sans-serif;
+      color: variables.$grey-4;
+      justify-content: center;
+    }
+
+    .header__main {
+      padding: 17px 0 0;
+      justify-content: end;
+    }
+
+    .header__link {
+      margin-right: 30px;
+    }
+
+    .header__menu,
+    .header__toggler {
+      display: none;
+    }
+
+    .header__burger,
+    .header__burger-open,
+    .header__burger-open_icon {
+      display: inline-block;
+    }
+  }
+}

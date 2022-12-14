@@ -1,0 +1,38 @@
+@use "../../assets/css/variables";
+@use "../../assets/css/mixins";
+
+.components {
+  min-width: 650px;
+  margin-left: 56px;
+  box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+  background: variables.$card-bg;
+
+  @include mixins.device(mixins.$md) {
+    margin: 0;
+    min-width: 0;
+    border-radius: 0;
+  }
+
+  &__top {
+    padding: 32px 48px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 58px;
+    color: variables.$input-text-color;
+    font: normal 400 28px/38px Inter, sans-serif;
+  }
+
+  &__bottom {
+    padding: 50px 106px 58px 42px;
+    overflow-x: auto;
+  }
+
+  &__html {
+    width: 80%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,90 @@
+@use "../../assets/css/variables";
+@use "../../assets/css/mixins";
+
+/* toggler element*/
+.toggler {
+  position: relative;
+  display: inline-block;
+
+  &__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  &__control {
+    box-sizing: border-box;
+    width: 52px;
+    height: 28px;
+
+    background: variables.$white;
+    border: 1px solid variables.$grey-2;
+    border-radius: 14px;
+    display: grid;
+    align-items: center;
+    transition: background-color 250ms linear;
+  }
+
+  &__icon-inner {
+    @include mixins.square(24px);
+    margin: 0 2px;
+    border-radius: 16px;
+    background: variables.$grey-2;
+    transform: translateX(0);
+    transition: transform 250ms linear;
+  }
+
+  &__title {
+    font: normal 400 16px/24px Inter, sans-serif;
+    color: variables.$text-primary;
+  }
+
+  &__theme {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  &__input {
+    @include mixins.hideNativeControl;
+
+    /* checked */
+    &:checked ~ .toggler__state {
+      .toggler__control {
+        background: variables.$blue;
+        border-color: variables.$blue;
+      }
+
+      .toggler__icon-inner {
+        background: variables.$white;
+        transform: translateX(95%);
+      }
+    }
+
+    /* disabled */
+    &:disabled ~ .toggler__state {
+      cursor: not-allowed;
+
+      .toggler__control {
+        background: variables.$grey-2;
+      }
+
+      .toggler__icon-inner {
+        background: variables.$grey-3;
+        opacity: 0.25;
+      }
+
+      .toggler__title {
+        color: variables.$grey-2;
+        font: normal 400 16px/24px Inter, sans-serif;
+      }
+    }
+
+    /* focus */
+    &:focus ~ .toggler__state .toggler__title {
+      border-bottom: 1px solid variables.$black;
+    }
+  }
+}

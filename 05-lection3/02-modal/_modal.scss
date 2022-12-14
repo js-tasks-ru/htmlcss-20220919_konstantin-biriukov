@@ -1,0 +1,62 @@
+@use "../../assets/css/variables";
+@use "../../assets/css/mixins";
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(196, 196, 196, 0.5);
+  z-index: 999;
+
+  &__window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px 33px 40px;
+
+    border-radius: 8px;
+    font: 400 normal 16px/24px Inter, sans-serif;
+    background: variables.$white-bg;
+    color: variables.$input-text-color;
+  }
+
+  &__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    @include mixins.square(20px);
+    color: variables.$input-text-color;
+    cursor: pointer;
+  }
+
+  &__title {
+    padding-bottom: 14px;
+    color: variables.$font-color;
+    font: 600 normal 20px/24px Inter, sans-serif;
+  }
+
+  /* Preview for Main Page */
+  &_preview {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 70%;
+    z-index: 1;
+
+    .modal__window {
+      padding: 15px;
+      width: 70%;
+      height: 70%;
+    }
+
+    .modal__text {
+      font-size: 10px;
+      line-height: 1rem;
+    }
+  }
+}
